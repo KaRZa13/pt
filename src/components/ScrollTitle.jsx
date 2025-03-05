@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollFloat = ({
+const ScrollTitle = ({
   children,
   scrollContainerRef,
   containerClassName = "",
@@ -87,4 +87,4 @@ const ScrollFloat = ({
   );
 };
 
-export default ScrollFloat;
+export default ScrollTitle;
