@@ -2,6 +2,7 @@ import { ReactLenis } from 'lenis/react'
 import Background from './components/Background'
 import Home from './pages/Home'
 import Profil from './pages/Profil'
+import MouseFollow from './components/MouseFollow'
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
           amplitude={0.1}
           speed={0.5}
         />
+          <MouseFollow />
           <Home />
           <Profil />
       </ReactLenis>
