@@ -1,0 +1,62 @@
+[
+  {
+    "name": "HTML",
+    "src": "./src/assets/html-logo.png",
+    "alt": "HTML-logo"
+  },
+  {
+    "name": "CSS",
+    "src": "./src/assets/css-logo.png",
+    "alt": "CSS-logo"
+  },
+  {
+    "name": "JAVASCRIPT",
+    "src": "./src/assets/js-logo.png",
+    "alt": "JavaScript-logo"
+  },
+  {
+    "name": "TYPESCRIPT",
+    "src": "./src/assets/ts-logo.png",
+    "alt": "TypeScript-logo"
+  },
+  {
+    "name": "VUEJS",
+    "src": "./src/assets/vue-logo.png",
+    "alt": "VueJs-logo"
+  },
+  {
+    "name": "REACT",
+    "src": "./src/assets/react-logo.png",
+    "alt": "React-logo"
+  },
+  {
+    "name": "NODE",
+    "src": "./src/assets/node-logo.png",
+    "alt": "Node-logo"
+  },
+  {
+    "name": "PYTHON",
+    "src": "./src/assets/python-logo.png",
+    "alt": "Python-logo"
+  },
+  {
+    "name": "PHP",
+    "src": "./src/assets/php-logo.png",
+    "alt": "PHP-logo"
+  },
+  {
+    "name": "SYMFONY",
+    "src": "./src/assets/symfony-logo.png",
+    "alt": "Symfony-logo"
+  },
+  {
+    "name": "MYSQL",
+    "src": "./src/assets/sql-logo.png",
+    "alt": "MySQL-logo"
+  },
+  {
+    "name": "GIT",
+    "src": "./src/assets/git-logo.png",
+    "alt": "Git-logo"
+  }
+]

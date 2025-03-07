@@ -4,8 +4,8 @@ const Title = () => {
 
   const handleAnimationComplete = () => {
     console.log('Animation completed!');
-  };
-  
+  }
+
   return (
     <>
       <div className='absolute flex flex-col justify-center items-center w-full h-full'>

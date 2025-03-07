@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react"
 import { useSpring, animated } from "@react-spring/web"
 
-const ImageProfile = ({
+const ContentScroll = ({
   children,
   distance = 100,
   direction = "vertical",
@@ -62,4 +62,4 @@ const ImageProfile = ({
   )
 }
 
-export default ImageProfile
+export default ContentScroll
