@@ -41,7 +41,7 @@ const Profil = () => {
         {/* PRESENTATION */}
         <div className='w-3/4 h-full'>
           <ScrollTitle
-            animationDuration={10}
+            animationDuration={8}
             ease='back.inOut(2)'
             scrollStart='center bottom+=10%'
             scrollEnd='bottom bottom-=10%'
