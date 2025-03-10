@@ -9,8 +9,6 @@ import Project from './pages/Project'
 
 const App = () => {
 
-
-
   return (
     <>
       <Background
@@ -22,13 +20,10 @@ const App = () => {
       />
       <SplashCursor />
       <ReactLenis className='w-screen h-screen' root options={{ smoothWheel: true, orientation: 'vertical' }}>
-          <Home />
-          <Profil />
-          <Skills />
-          <Project />
-      </ReactLenis>
-      <ReactLenis className='w-screen h-screen' root options={{ smoothWheel: true, orientation: 'horizontal' }}>
-      
+        <Home />
+        <Profil />
+        <Skills />
+        <Project />
       </ReactLenis>
     </>
   )
