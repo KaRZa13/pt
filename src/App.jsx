@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Profil from './pages/Profil'
 import Skills from './pages/Skills'
 import Project from './pages/Project'
+import Contact from './pages/Contact'
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
         <Profil />
         <Skills />
         <Project />
+        <Contact />
       </ReactLenis>
     </>
   )

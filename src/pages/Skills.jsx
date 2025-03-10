@@ -16,7 +16,7 @@ const Skills = () => {
             scrollStart='center bottom+=50%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
-            textClassName='!text-6xl uppercase'
+            textClassName='!text-4xl uppercase'
           >
             Mes compétences
           </ScrollTitle>

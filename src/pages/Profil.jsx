@@ -54,7 +54,7 @@ const Profil = () => {
             scale={0.8}
             threshold={0.2}
           >
-            <div className='text-2xl font-light leading-10'> 
+            <div className='text-2xl text- font-light leading-10'> 
               Je m'appelle Rafael MURO, développeur fullstack passionné par le monde du développement web. Depuis mon plus jeune âge, j’ai toujours été attiré par l’informatique, explorant mes premières lignes de code en créant des mods sur Minecraft. Aujourd’hui, en tant qu’étudiant en développement web, j’ai à cœur de concevoir des outils sur mesure pour répondre aux besoins de mes clients. Curieux et toujours en quête d’apprentissage, je m’investis pleinement dans chaque projet avec persévérance et rigueur. Mon objectif ? Construire des solutions fonctionnelles, intuitives et performantes qui allient technologie et expérience utilisateur.
             </div>
           </ContentScroll>
