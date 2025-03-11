@@ -3,7 +3,7 @@ import DecryptedText from '../components/DecryptedText'
 const Contact = () => {
 
   return (
-    <div className="h-screen w-screen flex flex-col justify-center items-center">
+    <div className="h-screen w-screen flex flex-col justify-center items-center font-grotesk">
       <h1>Contact</h1>
       <p>Send us a message!</p>
       <DecryptedText
