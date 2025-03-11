@@ -1,6 +1,6 @@
 [
   {
-    "name": "Project 1",
+    "name": "EPSI.FUN",
     "description": "This is a project description",
     "url": "https://www.google.com",
     "image": {
@@ -9,7 +9,7 @@
     }
   },
   {
-    "name": "Project 2",
+    "name": "laNewsletter (POC)",
     "description": "This is a project description",
     "url": "https://www.google.com",
     "image": 
@@ -19,7 +19,7 @@
     }
   },
   {
-    "name": "Project 3",
+    "name": "ROGUEPOO",
     "description": "This is a project description",
     "url": "https://www.google.com",
     "image": 
@@ -29,7 +29,17 @@
     }
   },
   {
-    "name": "Project 4",
+    "name": "Clicker",
+    "description": "This is a project description",
+    "url": "https://www.google.com",
+    "image": 
+    {
+      "src": "https://picsum.photos/400/300",
+      "alt": "Placeholder Image"
+    }
+  },
+  {
+    "name": "Plein de petits projets",
     "description": "This is a project description",
     "url": "https://www.google.com",
     "image": 
