@@ -7,6 +7,7 @@ import Profil from './pages/Profil'
 import Skills from './pages/Skills'
 import Project from './pages/Project'
 import Contact from './pages/Contact'
+import Formation from './pages/Formation'
 
 const App = () => {
 
@@ -14,7 +15,7 @@ const App = () => {
     <>
       <Background
         style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
-        color={[1, 1, 1]}
+        color={[1, 0.9, 1]}
         mouseReact={false}
         amplitude={0.1}
         speed={0.5}
@@ -25,6 +26,7 @@ const App = () => {
         <Profil />
         <Skills />
         <Project />
+        <Formation />
         <Contact />
       </ReactLenis>
     </>

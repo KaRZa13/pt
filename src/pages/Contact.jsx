@@ -1,40 +1,43 @@
 import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 import DecryptedText from '../components/DecryptedText'
-import ScrollTitle from '../components/ScrollTitle'
-
+import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
 
-  const contactDiv = useRef(null)
-
-  useEffect(() => {
-    
-  })
+  
 
   return (
-    <section className="h-[135vh] w-screen flex flex-col pt-[40vh]">
-      <span className='flex justify-center items-center'>
-        <h2>
-          <ScrollTitle
-            animationDuration={3}
-            ease='back.inOut(2)'
-            scrollStart='center bottom+=50%'
-            scrollEnd='bottom bottom-=30%'
-            stagger={0.1}
-            textClassName='!text-6xl uppercase'
-          >
-            Contactez moi
-          </ScrollTitle>
-        </h2>
-      </span>
-     <DecryptedText
-        text="Bonjour je m'appelle Rafael MURO" 
-        speed={50} 
-        characters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789=+-_:;,?.!@#$%^&*()[]{}|"
-        animateOn="view"
-        revealDirection="start"
-        sequential={true}
-     />
+    <section className="h-screen w-screen flex flex-col overflow-x-hidden font-grotesk">
+      {/* Div bleue (25%) */}
+      <div className="h-[60vh] w-full bg-blue-500/50 flex flex-col items-center">
+        <div>
+          <h2>
+            <DecryptedText
+              text="Contactez moi"
+              speed={150}
+              characters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789=+-_:;,?.!@#$%^&*()[]{}|"
+              animateOn="view"
+              revealDirection="start"
+              sequential={true}
+              className='text-4xl uppercase'
+              parentClassName='text-4xl'
+            />
+          </h2>
+        </div>
+
+        <div>
+          <ContactForm />
+        </div>
+
+
+      </div>
+
+      {/* Div blanche (75%) */}
+      <div className="h-[40vh] w-full bg-white/50 flex justify-center items-center">
+
+      </div>
     </section>
   )
 }

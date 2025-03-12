@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className='w-screen h-screen flex flex-col justify-around items-center font-grotesk mb-[50vh]'>
+      <div className='w-screen h-screen flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
         <div>
           <ScrollTitle
             animationDuration={3}

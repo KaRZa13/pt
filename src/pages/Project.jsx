@@ -58,7 +58,7 @@ const Project = () => {
   }
 
   return (
-    <div className='flex flex-col font-grotesk overflow-x-hidden'>
+    <div className='flex flex-col overflow-x-hidden mb-[50vh] font-grotesk'>
       <section className='h-[50vh] flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
@@ -72,48 +72,44 @@ const Project = () => {
         </ScrollTitle>
       </section>
 
-      <section ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 px-20 flex-nowrap overflow-hidden'>
-        {projects.map((project, index) => (
+      <section ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
+          {projects.map((project, index) => (
 
-          <article
-            key={index}
-            ref={(el) => projectRefs.current[index] = el}
-            onClick={() => toggleFlip(index)}
-            className="relative group cursor-pointer overflow-hidden rounded-3xl perspective-[1000px]"
-          >
-            <div className={`relative transition-transform duration-1000 transform-3d ${flipped[index] ? 'rotate-y-180' : ''}`}>
-              {/* Face avant */}
-              <div className="flex flex-col items-center justify-center w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
-                <img
-                  src={project.image.src}
-                  alt={project.name}
-                  className="w-[50vw] transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-50 transition duration-300"></div>
-                <h2 className="absolute inset-0 flex items-center justify-center text-2xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
-                  {project.name}
-                </h2>
-              </div>
-              {/* Face arrière */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border rounded-3xl backface-hidden rotate-y-180 bg-white/50">
-                <div>
-                  <h3>{project.name}</h3>
+            <article
+              key={index}
+              ref={(el) => projectRefs.current[index] = el}
+              onClick={() => toggleFlip(index)}
+              className="relative group cursor-pointer overflow-hidden rounded-3xl perspective-[1000px]"
+            >
+              <div className={`relative transition-transform duration-1000 transform-3d ${flipped[index] ? 'rotate-y-180' : ''}`}>
+                {/* Face avant */}
+                <div className="flex flex-col items-center justify-center w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
+                  <img
+                    src={project.image.src}
+                    alt={project.name}
+                    className="w-[50vw] transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                  <h2 className="absolute inset-0 flex items-center justify-center text-2xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
+                    {project.name}
+                  </h2>
                 </div>
-                <div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quidem animi reiciendis quo
-                    harum omnis aliquam vel esse eum, magni error fuga odit saepe aspernatur iure et voluptatem?
-                    Minus earum sunt veniam saepe doloribus? Unde, aliquid magnam dolorum debitis assumenda a
-                    distinctio doloribus ut eligendi quod animi aspernatur facilis provident ad laborum enim quo
-                    cumque dicta earum
-                  </p>
+                {/* Face arrière */}
+                <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border rounded-3xl backface-hidden rotate-y-180 bg-white/50">
+                  <div>
+                    <h3>{project.name}</h3>
+                  </div>
+                  <div>
+                    <p>
+                      {project.description}
+                    </p>
+                  </div>
+                  <a href={project.url}>Clique</a>
                 </div>
-                <a href="">Clique</a>
               </div>
-            </div>
-          </article>
+            </article>
 
-        ))}
+          ))}
       </section>
     </div>
   )

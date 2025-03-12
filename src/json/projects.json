@@ -1,31 +1,31 @@
 [
   {
-    "name": "EPSI.FUN",
+    "name": "EPSI.FUN (V2)",
     "description": "This is a project description",
-    "url": "https://www.google.com",
+    "url": "https://github.com/KaRZa13/epsi_fun_v2",
     "image": {
-      "src": "https://picsum.photos/400/300",
+      "src": "https://picsum.photos/800/600",
       "alt": "Placeholder Image"
     }
   },
   {
     "name": "laNewsletter (POC)",
     "description": "This is a project description",
-    "url": "https://www.google.com",
+    "url": "https://github.com/KaRZa13/laNewsletter_v1",
     "image": 
     {
-      "src": "https://picsum.photos/400/300",
+      "src": "https://picsum.photos/800/600",
       "alt": "Placeholder Image"
     }
   },
   {
-    "name": "ROGUEPOO",
+    "name": "RoguePOO",
     "description": "This is a project description",
-    "url": "https://www.google.com",
+    "url": "https://github.com/KaRZa13/RoguePOO",
     "image": 
     {
-      "src": "https://picsum.photos/400/300",
-      "alt": "Placeholder Image"
+      "src": "https://picsum.photos/800/600",
+      "alt": "RoguePOO"
     }
   },
   {
@@ -34,17 +34,17 @@
     "url": "https://www.google.com",
     "image": 
     {
-      "src": "https://picsum.photos/400/300",
+      "src": "https://picsum.photos/800/600",
       "alt": "Placeholder Image"
     }
   },
   {
-    "name": "Plein de petits projets",
+    "name": "Plein d'autres projets",
     "description": "This is a project description",
-    "url": "https://www.google.com",
+    "url": "https://github.com/KaRZa13",
     "image": 
     {
-      "src": "https://picsum.photos/400/300",
+      "src": "https://picsum.photos/800/600",
       "alt": "Placeholder Image"
     }
   }

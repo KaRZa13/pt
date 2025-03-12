@@ -1,12 +1,12 @@
-import { useRef, useEffect, useState } from 'react';
-import { useSprings, animated } from '@react-spring/web';
+import { useRef, useEffect, useState } from 'react'
+import { useSprings, animated } from '@react-spring/web'
 
 const BlurText = ({
   text = '',
   delay = 200,
   className = '',
-  animateBy = 'words', // 'words' or 'letters'
-  direction = 'top', // 'top' or 'bottom'
+  animateBy = 'words',
+  direction = 'top',
   threshold = 0.1,
   rootMargin = '0px',
   animationFrom,
@@ -19,11 +19,10 @@ const BlurText = ({
   const ref = useRef();
   const animatedCount = useRef(0);
 
-  // Default animations based on direction
   const defaultFrom =
     direction === 'top'
       ? { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,-50px,0)' }
-      : { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' };
+      : { filter: 'blur(10px)', opacity: 0, transform: 'translate3d(0,50px,0)' }
 
   const defaultTo = [
     {
@@ -32,7 +31,7 @@ const BlurText = ({
       transform: direction === 'top' ? 'translate3d(0,5px,0)' : 'translate3d(0,-5px,0)',
     },
     { filter: 'blur(0px)', opacity: 1, transform: 'translate3d(0,0,0)' },
-  ];
+  ]
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,12 +42,12 @@ const BlurText = ({
         }
       },
       { threshold, rootMargin }
-    );
+    )
 
-    observer.observe(ref.current);
+    observer.observe(ref.current)
 
-    return () => observer.disconnect();
-  }, [threshold, rootMargin]);
+    return () => observer.disconnect()
+  }, [threshold, rootMargin])
 
   const springs = useSprings(
     elements.length,
@@ -68,7 +67,7 @@ const BlurText = ({
       delay: i * delay,
       config: { easing },
     }))
-  );
+  )
 
   return (
     <p ref={ref} className={`blur-text ${className} flex flex-wrap`}>
@@ -83,7 +82,7 @@ const BlurText = ({
         </animated.span>
       ))}
     </p>
-  );
-};
+  )
+}
 
-export default BlurText;
+export default BlurText

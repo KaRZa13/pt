@@ -23,7 +23,7 @@ const Profil = () => {
 
 
       {/* PHOTO + PRESENTATION */}
-      <div className='w-screen h-[75vh] inline-flex justify-center font-grotesk space-x-32 px-16 mb-[50vh]'>
+      <div className='w-screen h-[75vh] inline-flex justify-center space-x-32 px-16 mb-[50vh] font-grotesk'>
 
         {/* PHOTO */}
         <div className='w-1/4 h-full flex justify-center items-center'>
