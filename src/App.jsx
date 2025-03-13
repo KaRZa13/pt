@@ -5,9 +5,9 @@ import SplashCursor from './components/SplashCursor'
 import Home from './pages/Home'
 import Profil from './pages/Profil'
 import Skills from './pages/Skills'
+import Career from './pages/Career'
 import Project from './pages/Project'
 import Contact from './pages/Contact'
-import Formation from './pages/Formation'
 
 const App = () => {
 
@@ -25,8 +25,8 @@ const App = () => {
         <Home />
         <Profil />
         <Skills />
+        <Career />
         <Project />
-        <Formation />
         <Contact />
       </ReactLenis>
     </>

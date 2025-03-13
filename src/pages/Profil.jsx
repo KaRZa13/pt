@@ -11,7 +11,7 @@ const Profil = () => {
           <ScrollTitle
             animationDuration={3}
             ease='back.inOut(2)'
-            scrollStart='center bottom+=30%'
+            scrollStart='top bottom+=30%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
             textClassName='!text-4xl uppercase'

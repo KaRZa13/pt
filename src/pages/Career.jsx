@@ -1,4 +1,4 @@
-const Formation = () => {
+const Career = () => {
     return (
         <div>
             <h1>Formation</h1>
@@ -6,4 +6,4 @@ const Formation = () => {
     )
 }
 
-export default Formation
+export default Career

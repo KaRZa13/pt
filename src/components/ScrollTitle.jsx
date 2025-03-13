@@ -60,7 +60,8 @@ const ScrollTitle = ({
           scroller,
           start: scrollStart,
           end: scrollEnd,
-          scrub: true
+          scrub: true,
+          // markers: true
         },
       }
     );
