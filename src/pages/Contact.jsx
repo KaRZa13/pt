@@ -21,22 +21,26 @@ const Contact = () => {
   const socialIcons = [
     {
       icon: <Phone />,
-      color: 'violet-400',
+      bgColor: 'bg-violet-400',
+      borderColor: 'border-violet-400',
       link: 'tel:+33612345678'
     },
     {
       icon: <Github />,
-      color: 'black',
+      bgColor: 'bg-black',
+      borderColor: 'border-black',
       link: 'https://github.com/KaRZa13'
     },
     {
       icon: <Linkedin />,
-      color: 'blue-500',
+      bgColor: 'bg-blue-500',
+      borderColor: 'border-blue-500',
       link: 'https://www.linkedin.com/in/rafael-muro-39b219295/'
     },
     {
       icon: <Mail />,
-      color: 'red-400',
+      bgColor: 'bg-red-400',
+      borderColor: 'border-red-400',
       link: 'mailto:rafael.muro@proton.me'
     }
   ]
@@ -122,8 +126,8 @@ const Contact = () => {
             <div key={index}>
               <a href={social.link} target="_blank" rel="noreferrer">
                 <button className="relative w-24 h-24 rounded-full group cursor-pointer">
-                  <div className={`floater w-full h-full absolute top-0 left-0 bg-${social.color} rounded-full duration-300 group-hover:-top-16 group-hover:shadow-2xl`} />
-                  <div className={`icon relative z-10 w-full h-full flex items-center justify-center border-2 border-${social.color} rounded-full`}>
+                  <div className={`floater w-full h-full absolute top-0 left-0 ${social.bgColor} rounded-full duration-300 group-hover:-top-16 group-hover:shadow-2xl`} />
+                  <div className={`icon relative z-10 w-full h-full flex items-center justify-center border-2 ${social.borderColor} rounded-full`}>
                     {social.icon}
                   </div>
                 </button>
