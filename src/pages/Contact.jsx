@@ -133,8 +133,6 @@ const Contact = () => {
         <div className='w-full flex flex-col justify-center items-center'>
           <ContactForm />
         </div>
-
-
       </div>
 
       {/* Div blanche (75%) */}

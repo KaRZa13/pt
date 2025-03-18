@@ -2,18 +2,30 @@
   {
     "name": "laNewsletter (POC)",
     "description": "Générateur de template HTML de la newsletter de laConsole via un formulaire connecté à une base de données Notion",
-    "url": "https://github.com/KaRZa13/laNewsletter_v1",
+    "techs": [
+      "Nuxt",
+      "Notion",
+      "Notion API",
+      "TailwindCSS"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/laNewsletter_v1",
+      "label": "Découvrir le projet sur Github"
+    },
     "url-presentation": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "image": 
-    {
-      "src": "https://picsum.photos/1600/1200",
+    "image": {
+      "src": "./src/assets/projects/laNewsletter.png",
       "alt": "laNewsletter"
     }
   },
   {
     "name": "EPSI.FUN (V2)",
     "description": "C'est un projet issue du Workshop de début de 2ème année de BTS SIO, réalisé par groupe de 4 en une semaine. Il centralise plusieurs mini-jeux liés au monde du développement",
-    "url": "https://github.com/KaRZa13/epsi_fun_v2",
+    "techs": [],
+    "url": {
+      "url": "https://github.com/KaRZa13/epsi_fun_v2",
+      "label": "Découvrir le projet sur Github"
+    },
     "image": {
       "src": "https://picsum.photos/800/600",
       "alt": "epsi.fun"
@@ -22,9 +34,12 @@
   {
     "name": "RoguePOO",
     "description": "Jeux RPG en python orienté objet réalisé en 1ère année de BTS SIO. \n Il y a plusieurs classes de personnage prise en compte, une gestion d'inventaire, de combat en tour par tour et deux modes de jeu ",
-    "url": "https://github.com/KaRZa13/RoguePOO",
-    "image": 
-    {
+    "techs": [],
+    "url": {
+      "url": "https://github.com/KaRZa13/RoguePOO",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
       "src": "https://picsum.photos/800/600",
       "alt": "RoguePOO"
     }
@@ -32,20 +47,44 @@
   {
     "name": "Clicker",
     "description": "This is a project description",
-    "url": "https://www.google.com",
-    "image": 
-    {
+    "techs": [],
+    "url": {
+      "url": "https://github.com/KaRZa13/pt",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
       "src": "https://picsum.photos/800/600",
       "alt": "Clicker"
     }
   },
   {
+    "name": "Portfolio",
+    "description": "Ce même portfolio que vous êtes en train de visiter",
+    "techs": [
+      "React",
+      "ThreeJS",
+      "GSAP",
+      "TailwindCSS"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/pt",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/portfolio.png",
+      "alt": "Portfolio"
+    }
+  },
+  {
     "name": "Plein d'autres projets",
-    "description": "This is a project description",
-    "url": "https://github.com/KaRZa13",
-    "image": 
-    {
-      "src": "https://picsum.photos/800/600",
+    "description": "Venez voir sur mon GitHub pour découvrir mes autres projets professionnels et personnels",
+    "techs": [],
+    "url": {
+      "url": "https://github.com/KaRZa13",
+      "label": "Découvrir mes autres projets sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/projets-github.png",
       "alt": "Placeholder Image"
     }
   }

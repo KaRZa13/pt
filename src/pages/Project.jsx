@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from '../components/ScrollTitle'
 import projects from '../json/projects.json'
+import { div, span } from 'framer-motion/client'
 
 const Project = () => {
   const galleryRef = useRef(null)
@@ -79,7 +80,7 @@ const Project = () => {
             key={index}
             ref={(el) => projectRefs.current[index] = el}
             onClick={() => toggleFlip(index)}
-            className={`relative ${!flipped[index] ? "group" : ""} cursor-pointer overflow-hidden rounded-3xl perspective-[1000px]`}
+            className={`relative ${!flipped[index] ? "group" : ""} cursor-pointer border-2 overflow-hidden rounded-3xl perspective-[1000px]`}
           >
             <div className={`relative transition-transform duration-1000 transform-3d ${flipped[index] ? 'rotate-y-180' : ''}`}>
               {/* Face avant */}
@@ -89,13 +90,13 @@ const Project = () => {
                   alt={project.name}
                   className="w-[50vw] transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-purple-200 opacity-0 group-hover:opacity-50 transition duration-300"></div>
-                <h2 className="absolute inset-0 flex items-center justify-center text-3xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
+                <div className="absolute inset-0 bg-purple-200 opacity-0 group-hover:opacity-70 transition duration-300"></div>
+                <h2 className="absolute inset-0 flex items-center justify-center text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
                   {project.name}
                 </h2>
               </div>
               {/* Face arrière */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border rounded-3xl backface-hidden rotate-y-180 bg-purple-200/70">
+              <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border-2 rounded-3xl backface-hidden rotate-y-180 bg-purple-200/70">
 
                 <div className='w-2/3 flex flex-col justify-center space-y-12'>
                   <div className='text-6xl font-bold'>
@@ -106,16 +107,31 @@ const Project = () => {
                       {project.description}
                     </p>
                   </div>
-                  <div className='inline-flex justify-around'>
-                    <a href={project.url} className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
-                      Découvrir le projet sur Github
-                      <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
-                    </a>
-                    {project["url-presentation"] && (
-                      <a href={project["url-presentation"]} target="_blank" rel="noopener noreferrer" className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
-                        Présentation vidéo
+
+                  {/* Chips */}
+                  <div className='inline-flex space-x-8'>
+                    {(project.techs || []).map((tech, id) => (
+                      <div className='border py-1 px-4 rounded-full bg-violet-400/40' key={id}>{tech}</div>
+                    ))}
+                  </div>
+
+
+
+                  {/* Liens */}
+                  <div className='flex flex-col gap-8 mt-4'>
+                    <span>
+                      <a href={project.url.url} className={`relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                        {project.url.label}
                         <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
                       </a>
+                    </span>
+                    {project["url-presentation"] && (
+                      <span>
+                        <a href={project["url-presentation"]} target="_blank" rel="noopener noreferrer" className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                          Présentation vidéo
+                          <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
+                        </a>
+                      </span>
                     )}
                   </div>
                 </div>

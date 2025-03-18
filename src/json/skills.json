@@ -30,6 +30,16 @@
     "alt": "React-logo"
   },
   {
+    "name": "GSAP",
+    "src": "./src/assets/skills/gsap-logo.png",
+    "alt": "GSAP-logo"
+  },
+  {
+    "name": "THREEJS",
+    "src": "./src/assets/skills/three-logo.png",
+    "alt": "ThreeJS-logo"
+  },
+  {
     "name": "NUXT",
     "src": "./src/assets/skills/nuxt-logo.png",
     "alt": "Nuxt-logo"
@@ -45,16 +55,6 @@
     "alt": "Python-logo"
   },
   {
-    "name": "PHP",
-    "src": "./src/assets/skills/php-logo.png",
-    "alt": "PHP-logo"
-  },
-  {
-    "name": "SYMFONY",
-    "src": "./src/assets/skills/symfony-logo.png",
-    "alt": "Symfony-logo"
-  },
-  {
     "name": "MYSQL",
     "src": "./src/assets/skills/sql-logo.png",
     "alt": "MySQL-logo"
@@ -63,6 +63,11 @@
     "name": "GIT",
     "src": "./src/assets/skills/git-logo.png",
     "alt": "Git-logo"
+  },
+  {
+    "name": "PHP",
+    "src": "./src/assets/skills/php-logo.png",
+    "alt": "PHP-logo"
   },
   {
     "name": "C#",
