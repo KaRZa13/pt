@@ -120,14 +120,14 @@ const Project = () => {
                   {/* Liens */}
                   <div className='flex flex-col gap-8 mt-4'>
                     <span>
-                      <a href={project.url.url} className={`relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                      <a href={project.url.url} className={`text-lg relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
                         {project.url.label}
                         <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
                       </a>
                     </span>
                     {project["url-presentation"] && (
                       <span>
-                        <a href={project["url-presentation"]} target="_blank" rel="noopener noreferrer" className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                        <a href={project["url-presentation"]} target="_blank" rel="noopener noreferrer" className={`w-auto relative no-underline text-lg leading-8 ${flipped[index] ? "group" : ""}`}>
                           Présentation vidéo
                           <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
                         </a>
