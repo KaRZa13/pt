@@ -1,62 +1,87 @@
 [
   {
     "name": "HTML",
-    "src": "./src/assets/html-logo.png",
+    "src": "./src/assets/skills/html-logo.png",
     "alt": "HTML-logo"
   },
   {
     "name": "CSS",
-    "src": "./src/assets/css-logo.png",
+    "src": "./src/assets/skills/css-logo.png",
     "alt": "CSS-logo"
   },
   {
     "name": "JAVASCRIPT",
-    "src": "./src/assets/js-logo.png",
+    "src": "./src/assets/skills/js-logo.png",
     "alt": "JavaScript-logo"
   },
   {
     "name": "TYPESCRIPT",
-    "src": "./src/assets/ts-logo.png",
+    "src": "./src/assets/skills/ts-logo.png",
     "alt": "TypeScript-logo"
   },
   {
     "name": "VUEJS",
-    "src": "./src/assets/vue-logo.png",
+    "src": "./src/assets/skills/vue-logo.png",
     "alt": "VueJs-logo"
   },
   {
     "name": "REACT",
-    "src": "./src/assets/react-logo.png",
+    "src": "./src/assets/skills/react-logo.png",
     "alt": "React-logo"
   },
   {
+    "name": "NUXT",
+    "src": "./src/assets/skills/nuxt-logo.png",
+    "alt": "Nuxt-logo"
+  },
+  {
     "name": "NODE",
-    "src": "./src/assets/node-logo.png",
+    "src": "./src/assets/skills/node-logo.png",
     "alt": "Node-logo"
   },
   {
     "name": "PYTHON",
-    "src": "./src/assets/python-logo.png",
+    "src": "./src/assets/skills/python-logo.png",
     "alt": "Python-logo"
   },
   {
     "name": "PHP",
-    "src": "./src/assets/php-logo.png",
+    "src": "./src/assets/skills/php-logo.png",
     "alt": "PHP-logo"
   },
   {
     "name": "SYMFONY",
-    "src": "./src/assets/symfony-logo.png",
+    "src": "./src/assets/skills/symfony-logo.png",
     "alt": "Symfony-logo"
   },
   {
     "name": "MYSQL",
-    "src": "./src/assets/sql-logo.png",
+    "src": "./src/assets/skills/sql-logo.png",
     "alt": "MySQL-logo"
   },
   {
     "name": "GIT",
-    "src": "./src/assets/git-logo.png",
+    "src": "./src/assets/skills/git-logo.png",
     "alt": "Git-logo"
+  },
+  {
+    "name": "C#",
+    "src": "./src/assets/skills/csharp-logo.png",
+    "alt": "csharp-logo"
+  },
+  {
+    "name": "NOTION",
+    "src": "./src/assets/skills/notion-logo.png",
+    "alt": "Node-logo"
+  },
+  {
+    "name": "JIRA",
+    "src": "./src/assets/skills/jira-logo.png",
+    "alt": "Jira-logo"
+  },
+  {
+    "name": "TEAMS",
+    "src": "./src/assets/skills/teams-logo.png",
+    "alt": "Teams-logo"
   }
 ]

@@ -3,15 +3,15 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import DecryptedText from '../components/DecryptedText'
 import ContactForm from '../components/ContactForm'
-import Github from '../components/svg/github'
+import Github from '../components/svg/Github'
 import Mail from '../components/svg/Mail'
 import Linkedin from '../components/svg/Linkedin'
 import Phone from '../components/svg/Phone'
+import CurriculumVitae from '../components/svg/CurriculumVitae'
 
 
 const Contact = () => {
 
-  gsap.registerPlugin(ScrollTrigger)
 
   const topDivRef = useRef(null)
   const botDivRef = useRef(null)
@@ -42,11 +42,24 @@ const Contact = () => {
       bgColor: 'bg-red-400',
       borderColor: 'border-red-400',
       link: 'mailto:rafael.muro@proton.me'
+    },
+    {
+      icon: <CurriculumVitae />,
+      bgColor: 'bg-teal-700',
+      borderColor: 'border-teal-700',
+      link: '/cv_Rafael_MURO.pdf',
+      download: true
     }
   ]
 
   useEffect(() => {
-    gsap.fromTo(topDivRef.current, {
+    gsap.registerPlugin(ScrollTrigger)
+  
+    const topDiv = topDivRef.current
+    const botDiv = botDivRef.current
+    const section = sectionRef.current
+  
+    const topAnim = gsap.fromTo(topDiv, {
       y: '100%',
       opacity: 0,
       height: '0vh'
@@ -56,16 +69,16 @@ const Contact = () => {
       height: '60vh',
       duration: 1,
       scrollTrigger: {
-        trigger: sectionRef.current,
+        trigger: section,
         start: 'top 50%',
-        end: 'bottom bottom',
+        end: 'top top',
         scrub: true,
         toggleActions: 'play none none reverse',
-        // markers: true
+        invalidateOnRefresh: true,
       },
-    })
-
-    gsap.fromTo(botDivRef.current, {
+    });
+  
+    const botAnim = gsap.fromTo(botDiv, {
       y: '-100%',
       opacity: 0,
       height: '0vh'
@@ -75,19 +88,25 @@ const Contact = () => {
       height: '40vh',
       duration: 1,
       scrollTrigger: {
-        trigger: sectionRef.current,
+        trigger: section,
         start: 'top 40%',
         end: 'bottom bottom',
         scrub: true,
         toggleActions: 'play none none reverse',
-        // markers: true
+        invalidateOnRefresh: true,
       }
     })
-  })
+  
+    return () => {
+      topAnim.kill()
+      botAnim.kill()
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  }, [])
 
   return (
-    <section ref={sectionRef} className="h-screen w-screen flex flex-col overflow-x-hidden font-grotesk">
-      {/* Div bleue (25%) */}
+    <section ref={sectionRef} className="h-screen w-screen flex flex-col overflow-x-hidden font-grotesk mt-[50vh]">
+      {/* Div zinc (25%) */}
       <div ref={topDivRef} className="w-full bg-zinc-500/80 inline-flex justify-center px-16">
 
         <div className='w-full flex flex-col justify-center items-center'>
@@ -119,9 +138,9 @@ const Contact = () => {
       </div>
 
       {/* Div blanche (75%) */}
-      <div ref={botDivRef} className="w-full bg-purple-200/80  flex justify-center items-center">
+      <div ref={botDivRef} className="w-full bg-purple-200/60  flex justify-center items-center">
 
-        <div class="flex items-center gap-16 w-full h-full justify-center">
+        <div className="flex items-center gap-16 w-full h-full justify-center">
           {socialIcons.map((social, index) => (
             <div key={index}>
               <a href={social.link} target="_blank" rel="noreferrer">

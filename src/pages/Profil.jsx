@@ -1,7 +1,31 @@
 import ScrollTitle from '../components/ScrollTitle'
 import ContentScroll from '../components/ContentScroll'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
 
 const Profil = () => {
+  const profilRef = useRef(null)
+  gsap.registerPlugin(ScrollTrigger)
+
+  useEffect(() => {
+    gsap.fromTo(profilRef.current, {
+      opacity: 0,
+      y: 100
+    }, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: profilRef.current,
+        start: 'top 60%',
+        end: 'bottom 95%',
+        scrub: true,
+        toggleActions: 'play none none reverse',
+        // markers: true
+      }
+    })
+  })
 
   return (
     <>
@@ -14,7 +38,7 @@ const Profil = () => {
             scrollStart='top bottom+=30%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
-            textClassName='!text-4xl uppercase'
+            textClassName='!text-6xl uppercase'
           >
             Une petite présentation s'impose
           </ScrollTitle>
@@ -23,7 +47,7 @@ const Profil = () => {
 
 
       {/* PHOTO + PRESENTATION */}
-      <div className='w-screen h-[75vh] inline-flex justify-center space-x-32 px-16 mb-[50vh] font-grotesk'>
+      <div ref={profilRef} className='w-screen h-[75vh] bg-purple-200/50 inline-flex justify-center space-x-32 px-16 mb-[50vh] font-grotesk'>
 
         {/* PHOTO */}
         <div className='w-1/4 h-full flex justify-center items-center'>

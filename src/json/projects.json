@@ -1,26 +1,27 @@
 [
   {
-    "name": "EPSI.FUN (V2)",
-    "description": "This is a project description",
-    "url": "https://github.com/KaRZa13/epsi_fun_v2",
-    "image": {
-      "src": "https://picsum.photos/800/600",
-      "alt": "Placeholder Image"
+    "name": "laNewsletter (POC)",
+    "description": "Générateur de template HTML de la newsletter de laConsole via un formulaire connecté à une base de données Notion",
+    "url": "https://github.com/KaRZa13/laNewsletter_v1",
+    "url-presentation": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "image": 
+    {
+      "src": "https://picsum.photos/1600/1200",
+      "alt": "laNewsletter"
     }
   },
   {
-    "name": "laNewsletter (POC)",
-    "description": "This is a project description",
-    "url": "https://github.com/KaRZa13/laNewsletter_v1",
-    "image": 
-    {
+    "name": "EPSI.FUN (V2)",
+    "description": "C'est un projet issue du Workshop de début de 2ème année de BTS SIO, réalisé par groupe de 4 en une semaine. Il centralise plusieurs mini-jeux liés au monde du développement",
+    "url": "https://github.com/KaRZa13/epsi_fun_v2",
+    "image": {
       "src": "https://picsum.photos/800/600",
-      "alt": "Placeholder Image"
+      "alt": "epsi.fun"
     }
   },
   {
     "name": "RoguePOO",
-    "description": "This is a project description",
+    "description": "Jeux RPG en python orienté objet réalisé en 1ère année de BTS SIO. \n Il y a plusieurs classes de personnage prise en compte, une gestion d'inventaire, de combat en tour par tour et deux modes de jeu ",
     "url": "https://github.com/KaRZa13/RoguePOO",
     "image": 
     {
@@ -35,7 +36,7 @@
     "image": 
     {
       "src": "https://picsum.photos/800/600",
-      "alt": "Placeholder Image"
+      "alt": "Clicker"
     }
   },
   {

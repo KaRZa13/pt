@@ -19,7 +19,7 @@ const Home = () => {
       duration: 1,
       scrollTrigger: {
         trigger: scrollDivRef.current,
-        start: 'top 80%',
+        start: 'top 75%',
         end: 'bottom 60%',
         scrub: true,
         toggleActions: 'play none none reverse',
@@ -50,9 +50,9 @@ const Home = () => {
           </h2>
         </div>
         <div className='h-1/10 flex justify-center items-center'>
-          <div ref={scrollDivRef} className='inline-flex justify-center items-center space-x-2 bg-white/50 rounded-full p-2'>
+          <div ref={scrollDivRef} className='inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
             <Arrow />
-            <span>Scroll down</span>
+            <div>Scroll down</div>
             <Arrow />
           </div>
         </div>

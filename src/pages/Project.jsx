@@ -34,7 +34,7 @@ const Project = () => {
           scrub: 1,
           pin: true,
           pinSpacing: true,
-          anticipatePin: 1,
+          anticipatePin: 0.2,
           snap: {
             snapTo: 1 / (projectRefs.current.length - 1),
             duration: 0.5,
@@ -58,7 +58,7 @@ const Project = () => {
   }
 
   return (
-    <div className='flex flex-col overflow-x-hidden mb-[50vh] font-grotesk'>
+    <div className='flex flex-col overflow-x-hidden mb-[40vh] font-grotesk'>
       <section className='h-[50vh] flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
@@ -73,43 +73,57 @@ const Project = () => {
       </section>
 
       <section ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
-          {projects.map((project, index) => (
+        {projects.map((project, index) => (
 
-            <article
-              key={index}
-              ref={(el) => projectRefs.current[index] = el}
-              onClick={() => toggleFlip(index)}
-              className="relative group cursor-pointer overflow-hidden rounded-3xl perspective-[1000px]"
-            >
-              <div className={`relative transition-transform duration-1000 transform-3d ${flipped[index] ? 'rotate-y-180' : ''}`}>
-                {/* Face avant */}
-                <div className="flex flex-col items-center justify-center w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
-                  <img
-                    src={project.image.src}
-                    alt={project.name}
-                    className="w-[50vw] transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-50 transition duration-300"></div>
-                  <h2 className="absolute inset-0 flex items-center justify-center text-2xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
-                    {project.name}
-                  </h2>
-                </div>
-                {/* Face arrière */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border rounded-3xl backface-hidden rotate-y-180 bg-white/50">
-                  <div>
+          <article
+            key={index}
+            ref={(el) => projectRefs.current[index] = el}
+            onClick={() => toggleFlip(index)}
+            className={`relative ${!flipped[index] ? "group" : ""} cursor-pointer overflow-hidden rounded-3xl perspective-[1000px]`}
+          >
+            <div className={`relative transition-transform duration-1000 transform-3d ${flipped[index] ? 'rotate-y-180' : ''}`}>
+              {/* Face avant */}
+              <div className="flex flex-col items-center justify-center w-full h-full" style={{ backfaceVisibility: 'hidden' }}>
+                <img
+                  src={project.image.src}
+                  alt={project.name}
+                  className="w-[50vw] transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-purple-200 opacity-0 group-hover:opacity-50 transition duration-300"></div>
+                <h2 className="absolute inset-0 flex items-center justify-center text-3xl font-bold opacity-0 group-hover:opacity-100 transition duration-300">
+                  {project.name}
+                </h2>
+              </div>
+              {/* Face arrière */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border rounded-3xl backface-hidden rotate-y-180 bg-purple-200/70">
+
+                <div className='w-2/3 flex flex-col justify-center space-y-12'>
+                  <div className='text-6xl font-bold'>
                     <h3>{project.name}</h3>
                   </div>
                   <div>
-                    <p>
+                    <p className='text-2xl'>
                       {project.description}
                     </p>
                   </div>
-                  <a href={project.url}>Clique</a>
+                  <div className='inline-flex justify-around'>
+                    <a href={project.url} className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                      Découvrir le projet sur Github
+                      <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
+                    </a>
+                    {project["url-presentation"] && (
+                      <a href={project["url-presentation"]} target="_blank" rel="noopener noreferrer" className={`w-auto relative no-underline leading-8 ${flipped[index] ? "group" : ""}`}>
+                        Présentation vidéo
+                        <span className="absolute bottom-[-0.25rem] right-0 w-0 h-[2px] bg-black rounded transition-all duration-400 group-hover:w-full group-hover:left-0"></span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
-            </article>
+            </div>
+          </article>
 
-          ))}
+        ))}
       </section>
     </div>
   )
