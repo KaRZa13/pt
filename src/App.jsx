@@ -19,7 +19,7 @@ const App = () => {
         amplitude={0.1}
         speed={0.5}
       />
-      <SplashCursor />
+      {/* <SplashCursor /> */}
       <ReactLenis className='w-screen h-screen' root options={{ smoothWheel: true, orientation: 'vertical' }}>
         <Home />
         <Profil />

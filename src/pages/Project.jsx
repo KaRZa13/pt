@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from '../components/ScrollTitle'
 import projects from '../json/projects.json'
-import { div, span } from 'framer-motion/client'
 
 const Project = () => {
   const galleryRef = useRef(null)
@@ -35,7 +34,7 @@ const Project = () => {
           scrub: 1,
           pin: true,
           pinSpacing: true,
-          anticipatePin: 0.2,
+          anticipatePin: 1,
           snap: {
             snapTo: 1 / (projectRefs.current.length - 1),
             duration: 0.5,
