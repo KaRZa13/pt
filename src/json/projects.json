@@ -45,19 +45,6 @@
     }
   },
   {
-    "name": "Clicker",
-    "description": "This is a project description",
-    "techs": [],
-    "url": {
-      "url": "https://github.com/KaRZa13/pt",
-      "label": "Découvrir le projet sur Github"
-    },
-    "image": {
-      "src": "https://picsum.photos/800/600",
-      "alt": "Clicker"
-    }
-  },
-  {
     "name": "Portfolio",
     "description": "Ce même portfolio que vous êtes en train de visiter",
     "techs": [
