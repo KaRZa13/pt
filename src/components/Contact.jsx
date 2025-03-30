@@ -1,18 +1,16 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import DecryptedText from '../components/DecryptedText'
-import ContactForm from '../components/ContactForm'
-import Github from '../components/svg/Github'
-import Mail from '../components/svg/Mail'
-import Linkedin from '../components/svg/Linkedin'
-import Phone from '../components/svg/Phone'
-import CurriculumVitae from '../components/svg/CurriculumVitae'
+import DecryptedText from './elements/DecryptedText'
+import ContactForm from './elements/ContactForm'
+import Github from './svg/Github'
+import Mail from './svg/Mail'
+import Linkedin from './svg/Linkedin'
+import Phone from './svg/Phone'
+import CurriculumVitae from './svg/CurriculumVitae'
 
 
 const Contact = () => {
-
-
   const topDivRef = useRef(null)
   const botDivRef = useRef(null)
   const sectionRef = useRef(null)
@@ -79,7 +77,7 @@ const Contact = () => {
     });
   
     const botAnim = gsap.fromTo(botDiv, {
-      y: '-100%',
+      y: '100%',
       opacity: 0,
       height: '0vh'
     }, {

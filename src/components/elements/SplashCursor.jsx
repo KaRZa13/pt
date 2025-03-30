@@ -586,8 +586,8 @@ function SplashCursor({
     const displayMaterial = new Material(baseVertexShader, displayShaderSource)
 
     function initFramebuffers() {
-      let simRes = getResolution(config.SIM_RESOLUTION)
-      let dyeRes = getResolution(config.DYE_RESOLUTION)
+      let simRes = getResolution(Math.max(config.SIM_RESOLUTION / 2, 32))
+      let dyeRes = getResolution(Math.max(config.DYE_RESOLUTION / 2, 32))
       const texType = ext.halfFloatTexType
       const rgba = ext.formatRGBA
       const rg = ext.formatRG

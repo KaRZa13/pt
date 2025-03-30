@@ -1,12 +1,12 @@
 import { ReactLenis } from 'lenis/react'
-import Background from './components/Background'
-import SplashCursor from './components/SplashCursor'
+import Background from './components/elements/Background'
+import SplashCursor from './components/elements/SplashCursor'
 
-import Home from './pages/Home'
-import Profil from './pages/Profil'
-import Skills from './pages/Skills'
-import Project from './pages/Project'
-import Contact from './pages/Contact'
+import Home from './components/Home'
+import Profil from './components/Profil'
+import Skills from './components/Skills'
+import Project from './components/Project'
+import Contact from './components/Contact'
 
 const App = () => {
 
@@ -19,7 +19,7 @@ const App = () => {
         amplitude={0.1}
         speed={0.5}
       />
-      {/* <SplashCursor /> */}
+      <SplashCursor />
       <ReactLenis className='w-screen h-screen' root options={{ smoothWheel: true, orientation: 'vertical' }}>
         <Home />
         <Profil />
