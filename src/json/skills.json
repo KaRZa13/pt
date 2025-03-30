@@ -30,6 +30,11 @@
     "alt": "React-logo"
   },
   {
+    "name": "TAILWINDCSS",
+    "src": "./src/assets/skills/tailwind-logo.png",
+    "alt": "Tailwind-logo"
+  },
+  {
     "name": "GSAP",
     "src": "./src/assets/skills/gsap-logo.png",
     "alt": "GSAP-logo"

@@ -21,7 +21,10 @@
   {
     "name": "EPSI.FUN (V2)",
     "description": "C'est un projet issue du Workshop de début de 2ème année de BTS SIO, réalisé par groupe de 4 en une semaine. Il centralise plusieurs mini-jeux liés au monde du développement. J'ai repris le projet pour l'améliorer.",
-    "techs": [],
+    "techs": [
+      "Nuxt",
+      "TailwindCSS"
+    ],
     "url": {
       "url": "https://github.com/KaRZa13/epsi_fun_v2",
       "label": "Découvrir le projet sur Github"
@@ -34,7 +37,7 @@
   {
     "name": "RoguePOO",
     "description": "Jeux RPG en python orienté objet réalisé en 1ère année de BTS SIO en groupe de 2 en 10 jours. \n Il y a plusieurs classes de personnage prise en compte, une gestion d'inventaire, de combat en tour par tour et deux modes de jeu.",
-    "techs": ["Python"],
+    "techs": ["Python", "POO", "PyGame"],
     "url": {
       "url": "https://github.com/KaRZa13/RoguePOO",
       "label": "Découvrir le projet sur Github"
