@@ -34,7 +34,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className='w-screen h-screen flex flex-col justify-around items-center mb-[40vh] font-grotesk'>
+      <div className='w-screen h-screen flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
         <div>
           <ScrollTitle
             animationDuration={3}
@@ -42,7 +42,7 @@ const Skills = () => {
             scrollStart='center bottom+=50%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
-            textClassName='!text-5xl uppercase'
+            textClassName='text-5xl uppercase'
           >
             Mes compétences
           </ScrollTitle>
@@ -59,13 +59,13 @@ const Skills = () => {
             scale={0.8}
             threshold={0.2}
           >
-            <div className='w-[80vw] h-auto flex flex-wrap justify-center items-center gap-4'>
+            <div className='w-[85vw] h-auto flex flex-wrap justify-center items-center gap-4'>
               {skills.map((skill, index) => (
                 <Tilt
                   key={index}
                   tiltMaxAngleX={maxAngle}
                   tiltMaxAngleY={maxAngle}
-                  className='h-50 flex flex-col bg-purple-200/50 items-center justify-around rounded-lg border border-black shadow-lg aspect-square py-8
+                  className='h-48 flex flex-col bg-purple-200/50 items-center justify-around rounded-lg border border-black shadow-lg aspect-square py-8
               before:w-8 before:h-8 before:border before:border-tertiary before:absolute before:z-10 before:opacity-30 before:duration-500 before:top-6 before:right-6 before:border-b-0 before:border-l-0 
               hover:before:w-[calc(100%_-_3rem)] hover:before:h-[calc(100%_-_3rem)] hover:after:w-[calc(100%_-_3rem)] hover:after:h-[calc(100%_-_3rem)]
               after:w-8 after:h-8 after:border after:border-tertiary after:absolute after:z-10 after:opacity-30 after:duration-500 after:bottom-6 after:left-6 after:border-t-0 after:border-r-0 '

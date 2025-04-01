@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Profil from './components/Profil'
 import Skills from './components/Skills'
 import Project from './components/Project'
+import Career from './components/Career'
 import Contact from './components/Contact'
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Profil />
         <Skills />
         <Project />
+        <Career />
         <Contact />
       </ReactLenis>
     </>

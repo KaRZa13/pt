@@ -1,0 +1,53 @@
+{
+  "education": [
+    {
+      "name": "Baccalauréat STI2D",
+      "date": "2017 - 2019",
+      "school": "Lycée les Eucalyptus",
+      "location": "Nice, France"
+    },
+    {
+      "name": "BTS SIO",
+      "date": "2023 - 2025",
+      "school": "EPSI",
+      "location": "Bordeaux, France"
+    },
+    {
+      "name": "Bachelor Web & Mobile Development",
+      "date": "2023 - 2026",
+      "school": "EPSI",
+      "location": "Bordeaux, France"
+    }
+  ],
+  "career": [
+    {
+      "type": "Stage",
+      "name": "Développeur intégrateur",
+      "date": "Janvier - Février 2024",
+      "company": "URSSAF Caisse Nationale",
+      "location": "Sophia Antipolis, France",
+      "description": "Développement d'une application de collecter et de traitement des arrêts maladies.",
+      "skills" : [
+        "Power Platform",
+        "Microsoft 365",
+        "Python"
+      ]
+    },
+    {
+      "type": "Stage",
+      "name": "Développeur fullstack",
+      "date": "Janvier - Février 2025",
+      "company": "laConsole",
+      "location": "Bordeaux, France",
+      "description": "Développement d'une application de création de template HTML pour des newsletter.",
+      "skills" : [
+        "Vue.js",
+        "Nuxt",
+        "Tailwind CSS",
+        "Notion",
+        "Notion API"
+      ]
+    }
+  ]
+  
+}

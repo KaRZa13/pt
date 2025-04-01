@@ -88,10 +88,5 @@
     "name": "JIRA",
     "src": "./src/assets/skills/jira-logo.png",
     "alt": "Jira-logo"
-  },
-  {
-    "name": "TEAMS",
-    "src": "./src/assets/skills/teams-logo.png",
-    "alt": "Teams-logo"
   }
 ]

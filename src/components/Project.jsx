@@ -58,21 +58,21 @@ const Project = () => {
   }
 
   return (
-    <div className='flex flex-col overflow-x-hidden mb-[40vh] font-grotesk'>
-      <section className='h-[50vh] flex justify-center items-center'>
+    <section className='flex flex-col overflow-x-hidden mb-[40vh] font-grotesk'>
+      <div className='h-[50vh] flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
           ease='back.inOut(2)'
-          scrollStart='center bottom+=50%'
+          scrollStart='top bottom+=50%'
           scrollEnd='bottom bottom-=30%'
           stagger={0.1}
-          textClassName='!text-6xl uppercase'
+          textClassName='text-5xl uppercase'
         >
           Mes réalisations
         </ScrollTitle>
-      </section>
+      </div>
 
-      <section ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
+      <div ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
         {projects.map((project, index) => (
 
           <article
@@ -98,11 +98,11 @@ const Project = () => {
               <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full border-2 rounded-3xl backface-hidden rotate-y-180 bg-purple-200/70">
 
                 <div className='w-2/3 flex flex-col justify-center space-y-12'>
-                  <div className='text-6xl font-bold'>
+                  <div className='text-4xl font-bold'>
                     <h3>{project.name}</h3>
                   </div>
                   <div>
-                    <p className='text-2xl'>
+                    <p className='text-xl'>
                       {project.description}
                     </p>
                   </div>
@@ -110,7 +110,7 @@ const Project = () => {
                   {/* Chips */}
                   <div className='inline-flex space-x-8'>
                     {(project.techs || []).map((tech, id) => (
-                      <div className='border py-1 px-4 rounded-full bg-violet-400/40' key={id}>{tech}</div>
+                      <div className='border py-1 px-4 rounded-full bg-violet-400/40 whitespace-nowrap' key={id}>{tech}</div>
                     ))}
                   </div>
 
@@ -139,8 +139,8 @@ const Project = () => {
           </article>
 
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 

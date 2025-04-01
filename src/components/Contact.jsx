@@ -9,12 +9,8 @@ import Linkedin from './svg/Linkedin'
 import Phone from './svg/Phone'
 import CurriculumVitae from './svg/CurriculumVitae'
 
-
 const Contact = () => {
-  const topDivRef = useRef(null)
-  const botDivRef = useRef(null)
   const sectionRef = useRef(null)
-
 
   const socialIcons = [
     {
@@ -52,71 +48,42 @@ const Contact = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger)
-  
-    const topDiv = topDivRef.current
-    const botDiv = botDivRef.current
-    const section = sectionRef.current
-  
-    const topAnim = gsap.fromTo(topDiv, {
-      y: '100%',
+
+    gsap.fromTo(sectionRef.current, {
       opacity: 0,
-      height: '0vh'
+      y: 100
     }, {
-      y: 0,
       opacity: 1,
-      height: '60vh',
+      y: 0,
       duration: 1,
       scrollTrigger: {
-        trigger: section,
-        start: 'top 50%',
-        end: 'top top',
-        scrub: true,
-        toggleActions: 'play none none reverse',
-        invalidateOnRefresh: true,
-      },
-    });
-  
-    const botAnim = gsap.fromTo(botDiv, {
-      y: '100%',
-      opacity: 0,
-      height: '0vh'
-    }, {
-      y: 0,
-      opacity: 1,
-      height: '40vh',
-      duration: 1,
-      scrollTrigger: {
-        trigger: section,
-        start: 'top 40%',
+        trigger: sectionRef.current,
+        start: 'top 70%',
         end: 'bottom bottom',
-        scrub: true,
         toggleActions: 'play none none reverse',
-        invalidateOnRefresh: true,
+        // markers: true
       }
     })
-  
-    return () => {
-      topAnim.kill()
-      botAnim.kill()
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
-    }
-  }, [])
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+  })
 
   return (
-    <section ref={sectionRef} className="h-screen w-screen flex flex-col overflow-x-hidden font-grotesk mt-[50vh]">
-      {/* Div zinc (25%) */}
-      <div ref={topDivRef} className="w-full bg-zinc-500/80 inline-flex justify-center px-16">
+    <section ref={sectionRef} className="h-screen w-screen flex flex-col font-grotesk">
+      {/* Contact */}
+      <div className="w-full h-3/5 bg-zinc-500/80 inline-flex justify-center px-16">
 
         <div className='w-full flex flex-col justify-center items-center'>
           <h2>
             <DecryptedText
               text="Contactez moi"
-              speed={150}
+              speed={125}
               animateOn="view"
               revealDirection="start"
               sequential={true}
-              className='text-5xl uppercase'
-              parentClassName='text-5xl'
+              className='text-5xl'
+              parentClassName='text-4xl'
             />
           </h2>
           <a onClick={(e) => {
@@ -133,8 +100,8 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Div blanche (75%) */}
-      <div ref={botDivRef} className="w-full bg-purple-200/60  flex justify-center items-center">
+      {/* Socials */}
+      <div className="w-full h-2/5 bg-purple-200/60  flex justify-center items-center">
 
         <div className="flex items-center gap-16 w-full h-full justify-center">
           {socialIcons.map((social, index) => (
