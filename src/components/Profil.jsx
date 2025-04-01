@@ -38,7 +38,7 @@ const Profil = () => {
             scrollStart='top bottom+=30%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
-            textClassName='!text-6xl uppercase'
+            textClassName='!text-5xl uppercase'
           >
             Une petite présentation s'impose
           </ScrollTitle>
@@ -47,7 +47,7 @@ const Profil = () => {
 
 
       {/* PHOTO + PRESENTATION */}
-      <div ref={profilRef} className='w-screen h-[75vh] bg-purple-200/50 inline-flex justify-center space-x-32 px-16 mb-[50vh] font-grotesk'>
+      <div ref={profilRef} className='w-screen h-[75vh] bg-purple-200/50 inline-flex justify-center space-x-32 px-16 mb-[75vh] font-grotesk'>
 
         {/* PHOTO */}
         <div className='w-1/4 h-full flex justify-center items-center'>
@@ -78,8 +78,8 @@ const Profil = () => {
             scale={0.8}
             threshold={0.2}
           >
-            <div className='text-2xl font-light leading-10'> 
-              Je m'appelle Rafael MURO, développeur fullstack passionné par le monde du développement web. Depuis mon plus jeune âge, j’ai toujours été attiré par l’informatique, explorant mes premières lignes de code en créant des mods sur Minecraft. Aujourd’hui, en tant qu’étudiant en développement web, j’ai à cœur de concevoir des outils sur mesure pour répondre aux besoins de mes clients. Curieux et toujours en quête d’apprentissage, je m’investis pleinement dans chaque projet avec persévérance et rigueur. Mon objectif ? Construire des solutions fonctionnelles, intuitives et performantes qui allient technologie et expérience utilisateur.
+            <div className='text-lg font-light leading-10 text-justify'> 
+              Je m'appelle Rafael MURO, développeur fullstack passionné par le monde du développement web. Depuis mon plus jeune âge, j’ai toujours été attiré par l’informatique, explorant mes premières lignes de code en créant des mods sur Minecraft. Aujourd’hui, en tant qu’étudiant en développement web, j’ai à cœur de concevoir des outils sur mesure pour répondre aux besoins de mes clients. Curieux et toujours en quête d’apprentissage, je m’investis pleinement dans chaque projet avec persévérance et rigueur. <br/> Mon objectif ? Construire des solutions fonctionnelles, intuitives et performantes qui allient technologie et expérience utilisateur.
             </div>
           </ContentScroll>
         </div>

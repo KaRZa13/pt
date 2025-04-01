@@ -19,8 +19,8 @@ const Home = () => {
       duration: 1,
       scrollTrigger: {
         trigger: scrollDivRef.current,
-        start: 'top 85%',
-        end: 'bottom 70%',
+        start: 'top 70%',
+        end: 'bottom 55%',
         scrub: true,
         toggleActions: 'play none none reverse',
         // markers: true
@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden'>
+      <div className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
           <h1 className='text-zinc-900 text-3xl'>
             <BlurText
