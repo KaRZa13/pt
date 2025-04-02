@@ -1,10 +1,11 @@
 import ScrollTitle from "./elements/ScrollTitle"
+import Timeline from "./svg/Timeline"
 import career from '../json/career.json'
 
 const Career = () => {
 
   return (
-    <section className="w-screen h-screen font-grotesk flex flex-col justify-center">
+    <section className="w-screen h-auto font-grotesk flex flex-col justify-center">
       <div className='w-full h-[50vh] flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
@@ -22,8 +23,8 @@ const Career = () => {
         <div>
           {/* PRO */}
         </div>
-        <div>
-          {/* CHRONOLOGIE */}
+        <div className="h-screen">
+          <Timeline/>
         </div>
         <div>
           {/* FORMATION */}

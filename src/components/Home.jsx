@@ -49,7 +49,7 @@ const Home = () => {
               className="text-7xl mb-8" />
           </h2>
         </div>
-        <div ref={scrollDivRef} className='absolute bottom-24 inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
+        <div ref={scrollDivRef} className='absolute bottom-18 inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
           <Arrow />
           <div>Scroll down</div>
           <Arrow />
