@@ -1,43 +1,34 @@
 {
   "education": [
     {
-      "name": "Baccalauréat STI2D",
-      "date": "2017 - 2019",
-      "school": "Lycée les Eucalyptus",
-      "location": "Nice, France"
+      "name": "Bachelor Web & Mobile Development",
+      "date": "2023 - 2026",
+      "school": "EPSI",
+      "logo": "img/logo_epsi.png",
+      "location": "Bordeaux, France"
     },
     {
       "name": "BTS SIO",
       "date": "2023 - 2025",
       "school": "EPSI",
+      "logo": "img/logo_epsi.png",
       "location": "Bordeaux, France"
     },
     {
-      "name": "Bachelor Web & Mobile Development",
-      "date": "2023 - 2026",
-      "school": "EPSI",
-      "location": "Bordeaux, France"
+      "name": "Baccalauréat STI2D",
+      "date": "2017 - 2019",
+      "school": "Lycée les Eucalyptus",
+      "logo": "img/logo_ek.png",
+      "location": "Nice, France"
     }
   ],
   "career": [
     {
       "type": "Stage",
-      "name": "Développeur intégrateur",
-      "date": "Janvier - Février 2024",
-      "company": "URSSAF Caisse Nationale",
-      "location": "Sophia Antipolis, France",
-      "description": "Développement d'une application de collecter et de traitement des arrêts maladies.",
-      "skills" : [
-        "Power Platform",
-        "Microsoft 365",
-        "Python"
-      ]
-    },
-    {
-      "type": "Stage",
       "name": "Développeur fullstack",
       "date": "Janvier - Février 2025",
       "company": "laConsole",
+      "logo": "img/logo_laconsole.png",
       "location": "Bordeaux, France",
       "description": "Développement d'une application de création de template HTML pour des newsletter.",
       "skills" : [
@@ -47,7 +38,20 @@
         "Notion",
         "Notion API"
       ]
+    },
+    {
+      "type": "Stage",
+      "name": "Développeur intégrateur",
+      "date": "Janvier - Février 2024",
+      "company": "URSSAF Caisse Nationale",
+      "logo": "img/logo_urssaf.png",
+      "location": "Sophia Antipolis, France",
+      "description": "Développement d'une application de collecter et de traitement des arrêts maladies.",
+      "skills" : [
+        "Power Platform",
+        "Microsoft 365",
+        "Python"
+      ]
     }
   ]
-  
 }
