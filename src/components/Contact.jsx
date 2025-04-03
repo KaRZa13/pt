@@ -70,17 +70,17 @@ const Contact = () => {
   })
 
   return (
-    <section ref={sectionRef} className="h-screen w-screen flex flex-col font-grotesk">
+    <section ref={sectionRef} className='h-screen w-screen flex flex-col font-grotesk'>
       {/* Contact */}
-      <div className="w-full h-3/5 bg-zinc-500/80 inline-flex justify-center px-16">
+      <div className='w-full h-3/5 bg-zinc-500/80 inline-flex justify-center px-16'>
 
         <div className='w-full flex flex-col justify-center items-center'>
           <h2>
             <DecryptedText
-              text="Contactez moi"
+              text='Contactez moi'
               speed={125}
-              animateOn="view"
-              revealDirection="start"
+              animateOn='view'
+              revealDirection='start'
               sequential={true}
               className='text-5xl'
               parentClassName='text-4xl'
@@ -101,13 +101,13 @@ const Contact = () => {
       </div>
 
       {/* Socials */}
-      <div className="w-full h-2/5 bg-purple-200/60  flex justify-center items-center">
+      <div className='w-full h-2/5 bg-purple-200/60  flex justify-center items-center'>
 
-        <div className="flex items-center gap-16 w-full h-full justify-center">
+        <div className='flex items-center gap-16 w-full h-full justify-center'>
           {socialIcons.map((social, index) => (
             <div key={index}>
-              <a href={social.link} target="_blank" rel="noreferrer">
-                <button className="relative w-24 h-24 rounded-full group cursor-pointer">
+              <a href={social.link} target='_blank' rel='noreferrer'>
+                <button className='relative w-24 h-24 rounded-full group cursor-pointer'>
                   <div className={`floater w-full h-full absolute top-0 left-0 ${social.bgColor} rounded-full duration-300 group-hover:-top-16 group-hover:shadow-2xl`} />
                   <div className={`icon relative z-10 w-full h-full flex items-center justify-center border-2 ${social.borderColor} rounded-full`}>
                     {social.icon}

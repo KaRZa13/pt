@@ -1,8 +1,8 @@
-import { useRef, useEffect } from "react"
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import ScrollTitle from "./elements/ScrollTitle"
-import DecryptedText from "./elements/DecryptedText"
+import { useRef, useEffect } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import ScrollTitle from './elements/ScrollTitle'
+import DecryptedText from './elements/DecryptedText'
 import career from '../json/career.json'
 
 const Career = () => {
@@ -59,7 +59,7 @@ const Career = () => {
   })
 
   return (
-    <section className="w-screen h-screen font-grotesk flex flex-col justify-center mb-[50vh]">
+    <section className='w-screen h-screen font-grotesk flex flex-col justify-center mb-[50vh]'>
       <h3 className='w-full h-full flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
@@ -73,36 +73,36 @@ const Career = () => {
         </ScrollTitle>
       </h3>
 
-      <div className="w-full h-full inline-flex gap-8 px-8 ">
+      <div className='w-full h-full inline-flex gap-8 px-8 '>
 
         {/* Professionnel */}
-        <div ref={leftDivRef} className="w-1/2 h-[75vh] flex flex-col items-center bg-purple-300/60 rounded-lg p-4">
+        <div ref={leftDivRef} className='w-1/2 h-[75vh] flex flex-col items-center bg-purple-300/60 rounded-lg p-4'>
           <h3>
             <DecryptedText
-              text="Professionnel"
+              text='Professionnel'
               speed={125}
-              animateOn="view"
-              revealDirection="start"
+              animateOn='view'
+              revealDirection='start'
               sequential={true}
               className='text-3xl'
               parentClassName='text-3xl'
             />
           </h3>
 
-          <div className="w-full h-2/3 flex justify-end space-y-6 px-4 py-16">
-            <div className="flex flex-col space-y-6">
+          <div className='w-full h-2/3 flex justify-end space-y-6 px-4 py-16'>
+            <div className='flex flex-col space-y-6'>
               {career.career.map((item, index) => (
-                <div key={index} className="inline-flex flex-row-reverse gap-4">
-                  <div className="flex justify-center items-start">
-                    <img src={item.logo} alt="Logo" className="w-auto h-16 p-1 rounded-lg" />
+                <div key={index} className='inline-flex flex-row-reverse gap-4'>
+                  <div className='flex justify-center items-start'>
+                    <img src={item.logo} alt='Logo' className='w-auto h-16 p-1 rounded-lg' />
                   </div>
-                  <div className="flex flex-col justify-center items-end">
-                    <h4 className="text-xl">{item.name}</h4>
-                    <div className="inline-flex items-center gap-2">
-                      <p className="text-sm">{item.job}</p>
-                      <p className="text-xs">{item.date}</p>
+                  <div className='flex flex-col justify-center items-end'>
+                    <h4 className='text-xl'>{item.name}</h4>
+                    <div className='inline-flex items-center gap-2'>
+                      <p className='text-sm'>{item.job}</p>
+                      <p className='text-xs'>{item.date}</p>
                     </div>
-                    <p className="text-sm">{item.location}</p>
+                    <p className='text-sm'>{item.location}</p>
                   </div>
 
                 </div>
@@ -113,32 +113,32 @@ const Career = () => {
         </div>
 
         {/* Formation */}
-        <div ref={rightDivRef} className="w-1/2 h-[75vh] flex flex-col items-center bg-purple-300/60 rounded-lg p-4">
+        <div ref={rightDivRef} className='w-1/2 h-[75vh] flex flex-col items-center bg-purple-300/60 rounded-lg p-4'>
           <h3>
             <DecryptedText
-              text="Formation"
+              text='Formation'
               speed={125}
-              animateOn="view"
-              revealDirection="start"
+              animateOn='view'
+              revealDirection='start'
               sequential={true}
               className='text-3xl'
               parentClassName='text-3xl'
             />
           </h3>
-          <div className="w-full h-2/3 flex px-4 py-16">
-            <div className="flex flex-col space-y-6">
+          <div className='w-full h-2/3 flex px-4 py-16'>
+            <div className='flex flex-col space-y-6'>
               {career.education.map((item, index) => (
-                <div key={index} className="inline-flex gap-4">
-                  <div className="flex justify-center items-start">
-                    <img src={item.logo} alt="Logo" className="w-16 h-16 p-2 rounded-lg" />
+                <div key={index} className='inline-flex gap-4'>
+                  <div className='flex justify-center items-start'>
+                    <img src={item.logo} alt='Logo' className='w-16 h-16 p-2 rounded-lg' />
                   </div>
-                  <div className="flex flex-col justify-center items-start">
-                    <h4 className="text-xl">{item.name}</h4>
-                    <div className="inline-flex items-center gap-2">
-                      <p className="text-sm">{item.school}</p>
-                      <p className="text-xs">{item.date}</p>
+                  <div className='flex flex-col justify-center items-start'>
+                    <h4 className='text-xl'>{item.name}</h4>
+                    <div className='inline-flex items-center gap-2'>
+                      <p className='text-sm'>{item.school}</p>
+                      <p className='text-xs'>{item.date}</p>
                     </div>
-                    <p className="text-sm">{item.location}</p>
+                    <p className='text-sm'>{item.location}</p>
                   </div>
 
                 </div>

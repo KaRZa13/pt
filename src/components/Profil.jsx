@@ -28,9 +28,8 @@ const Profil = () => {
   })
 
   return (
-    <>
-
-      <div className='w-screen h-[50vh] flex justify-center items-center font-grotesk'>
+    <section className='w-sreen h-screen mb-[75vh]'>
+      <div className='w-full h-[50vh] flex justify-center items-center font-grotesk'>
         <div>
           <ScrollTitle
             animationDuration={3}
@@ -47,13 +46,13 @@ const Profil = () => {
 
 
       {/* PHOTO + PRESENTATION */}
-      <div ref={profilRef} className='w-screen h-[75vh] bg-purple-200/50 inline-flex justify-center space-x-32 px-16 mb-[75vh] font-grotesk'>
+      <div ref={profilRef} className='w-full h-[75vh] bg-purple-200/50 inline-flex justify-center space-x-32 px-16 font-grotesk'>
 
         {/* PHOTO */}
         <div className='w-1/4 h-full flex justify-center items-center'>
           <ContentScroll
             distance={150}
-            direction="vertical"
+            direction='vertical'
             reverse={false}
             config={{ tension: 80, friction: 20 }}
             initialOpacity={0}
@@ -61,7 +60,7 @@ const Profil = () => {
             scale={0.8}
             threshold={0.2}
           >
-            <img src="img/pp.jpeg" alt="Photo de profil" className='rounded-full' />
+            <img src='img/pp.jpeg' alt='Photo de profil' className='rounded-full' />
           </ContentScroll>
         </div>
 
@@ -70,7 +69,7 @@ const Profil = () => {
 
           <ContentScroll
             distance={150}
-            direction="vertical"
+            direction='vertical'
             reverse={false}
             config={{ tension: 80, friction: 20 }}
             initialOpacity={0}
@@ -83,9 +82,8 @@ const Profil = () => {
             </div>
           </ContentScroll>
         </div>
-
       </div>
-    </>
+    </section>
   )
 }
 

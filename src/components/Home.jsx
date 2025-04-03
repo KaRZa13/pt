@@ -29,33 +29,31 @@ const Home = () => {
   }, [])
 
   return (
-    <>
-      <div className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
-        <div className='flex flex-col justify-center items-center w-full h-full'>
-          <h1 className='text-zinc-900 text-3xl'>
-            <BlurText
-              text="RAFAEL MURO"
-              delay={450}
-              animateBy="words"
-              direction="top"
-              className="text-9xl mb-8" />
-          </h1>
-          <h2>
-            <BlurText
-              text="Développeur fullstack"
-              delay={900}
-              animateBy="words"
-              direction="top"
-              className="text-7xl mb-8" />
-          </h2>
-        </div>
-        <div ref={scrollDivRef} className='absolute bottom-18 inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
-          <Arrow />
-          <div>Scroll down</div>
-          <Arrow />
-        </div>
+    <section className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
+      <div className='flex flex-col justify-center items-center w-full h-full'>
+        <h1 className='text-zinc-900 text-3xl'>
+          <BlurText
+            text='RAFAEL MURO'
+            delay={450}
+            animateBy='words'
+            direction='top'
+            className='text-9xl mb-8' />
+        </h1>
+        <h2>
+          <BlurText
+            text='Développeur fullstack'
+            delay={900}
+            animateBy='words'
+            direction='top'
+            className='text-7xl mb-8' />
+        </h2>
       </div>
-    </>
+      <div ref={scrollDivRef} className='absolute bottom-18 inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
+        <Arrow />
+        <p>Scroll down</p>
+        <Arrow />
+      </div>
+    </section>
   )
 }
 
