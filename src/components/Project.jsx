@@ -83,7 +83,7 @@ const Project = () => {
           >
             <div className={`relative transition-transform duration-1000 transform-3d border-2 rounded-3xl ${flipped[index] ? 'rotate-y-180' : ''}`}>
               {/* Face avant */}
-              <div className='flex flex-col items-center justify-center w-full h-full overflow-hidden rounded-3xl' style={{ backfaceVisibility: 'hidden' }}>
+              <div className='flex flex-col items-center justify-center w-full h-full overflow-hidden rounded-3xl backface-hidden'>
                 <div className='w-full h-full overflow-hidden'>
                   <img
                     src={project.image.src}
@@ -97,7 +97,7 @@ const Project = () => {
                 </div>
               </div>
               {/* Face arrière */}
-              <div className='absolute inset-0 flex flex-col items-center justify-center w-full h-full rounded-3xl rotate-y-180 bg-purple-200/70' style={{ backfaceVisibility: 'hidden' }}>
+              <div className='absolute inset-0 flex flex-col items-center justify-center w-full h-full rounded-3xl rotate-y-180 bg-purple-200/70 backface-hidden'>
 
                 <div className='w-2/3 flex flex-col justify-center space-y-12'>
                   <div className='text-4xl font-bold'>

@@ -21,14 +21,21 @@ const App = () => {
         speed={0.5}
       />
       <SplashCursor />
-      <ReactLenis className='w-screen h-screen' root options={{ smoothWheel: true, orientation: 'vertical' }}>
-        <Home />
-        <Profil />
-        <Skills />
-        <Project />
-        <Career />
-        <Contact />
-      </ReactLenis>
+      <div className='md:hidden w-screen h-screen flex justify-center items-center text-3xl font-grotesk p-4'>
+        <div className='flex justify-center items-center bg-purple-300/60 rounded-3xl p-8'>
+          <p className='text-2xl'>Ce portfolio n'est pas dispobible, pour en profiter, revenez sur PC !</p>
+        </div>
+      </div>
+      <div className='w-screen h-screen hidden md:block'>
+        <ReactLenis root options={{ smoothWheel: true, orientation: 'vertical' }}>
+          <Home />
+          <Profil />
+          <Skills />
+          <Project />
+          <Career />
+          <Contact />
+        </ReactLenis>
+      </div>
     </>
   )
 }

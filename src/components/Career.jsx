@@ -97,12 +97,12 @@ const Career = () => {
                     <img src={item.logo} alt='Logo' className='w-auto h-16 p-1 rounded-lg' />
                   </div>
                   <div className='flex flex-col justify-center items-end'>
-                    <h4 className='text-xl'>{item.name}</h4>
+                    <h4 className='text-2xl'>{item.name}</h4>
                     <div className='inline-flex items-center gap-2'>
-                      <p className='text-sm'>{item.job}</p>
-                      <p className='text-xs'>{item.date}</p>
+                      <p className='text-md'>{item.job}</p>
+                      <p className='text-sm'>{item.date}</p>
                     </div>
-                    <p className='text-sm'>{item.location}</p>
+                    <p className='text-md'>{item.location}</p>
                   </div>
 
                 </div>
@@ -133,12 +133,12 @@ const Career = () => {
                     <img src={item.logo} alt='Logo' className='w-16 h-16 p-2 rounded-lg' />
                   </div>
                   <div className='flex flex-col justify-center items-start'>
-                    <h4 className='text-xl'>{item.name}</h4>
+                    <h4 className='text-2xl'>{item.name}</h4>
                     <div className='inline-flex items-center gap-2'>
-                      <p className='text-sm'>{item.school}</p>
-                      <p className='text-xs'>{item.date}</p>
+                      <p className='text-md'>{item.school}</p>
+                      <p className='text-sm'>{item.date}</p>
                     </div>
-                    <p className='text-sm'>{item.location}</p>
+                    <p className='text-md'>{item.location}</p>
                   </div>
 
                 </div>
