@@ -2,7 +2,7 @@ import { gsap } from 'gsap'
 import { useEffect, useRef, useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from './elements/ScrollTitle'
-import projects from '../json/data/projects.json'
+import projects from '../json/projects.json'
 
 const Project = () => {
   const galleryRef = useRef(null)

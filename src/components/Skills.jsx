@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react'
-import skills from '../json/data/skills.json'
+import skills from '../json/skills.json'
 import Tilt from 'react-parallax-tilt'
 import ScrollTitle from './elements/ScrollTitle'
 import ContentScroll from './elements/ContentScroll'

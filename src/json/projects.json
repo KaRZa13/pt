@@ -1,0 +1,81 @@
+[
+  {
+    "name": "laNewsletter (POC)",
+    "description": "Générateur de template HTML de la newsletter de laConsole via un formulaire connecté à une base de données Notion",
+    "techs": [
+      "Nuxt",
+      "Notion",
+      "Notion API",
+      "TailwindCSS"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/laNewsletter_v1",
+      "label": "Découvrir le projet sur Github"
+    },
+    "url-presentation": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "image": {
+      "src": "./src/assets/projects/laNewsletter.png",
+      "alt": "laNewsletter"
+    }
+  },
+  {
+    "name": "EPSI.FUN (V2)",
+    "description": "C'est un projet issue du Workshop de début de 2ème année de BTS SIO, réalisé par groupe de 4 en une semaine. Il centralise plusieurs mini-jeux liés au monde du développement. J'ai repris le projet pour l'améliorer.",
+    "techs": [
+      "Nuxt",
+      "TailwindCSS"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/epsi_fun_v2",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/epsi-fun.png",
+      "alt": "epsi.fun"
+    }
+  },
+  {
+    "name": "RoguePOO",
+    "description": "Jeux RPG en python orienté objet réalisé en 1ère année de BTS SIO en groupe de 2 en 10 jours. \n Il y a plusieurs classes de personnage prise en compte, une gestion d'inventaire, de combat en tour par tour et deux modes de jeu.",
+    "techs": ["Python", "POO", "PyGame"],
+    "url": {
+      "url": "https://github.com/KaRZa13/RoguePOO",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/roguepoo.png",
+      "alt": "RoguePOO"
+    }
+  },
+  {
+    "name": "Portfolio",
+    "description": "Ce même portfolio que vous êtes en train de visiter",
+    "techs": [
+      "React",
+      "ThreeJS",
+      "GSAP",
+      "TailwindCSS"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/pt",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/portfolio.png",
+      "alt": "Portfolio"
+    }
+  },
+  {
+    "name": "Plein d'autres projets",
+    "description": "Venez voir sur mon GitHub pour découvrir mes autres projets professionnels et personnels",
+    "techs": [],
+    "url": {
+      "url": "https://github.com/KaRZa13",
+      "label": "Découvrir mes autres projets sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/projets-github.png",
+      "alt": "Placeholder Image"
+    }
+  }
+]

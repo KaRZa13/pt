@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from './elements/ScrollTitle'
 import DecryptedText from './elements/DecryptedText'
-import career from '../json/data/career.json'
+import career from '../json/career.json'
 
 const Career = () => {
   const leftDivRef = useRef(null)

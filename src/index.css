@@ -9,6 +9,11 @@
   --font-grotesk: "Space Grotesk", sans-serif;
 }
 
+* {
+  user-select: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
+

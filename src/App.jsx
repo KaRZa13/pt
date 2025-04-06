@@ -23,7 +23,7 @@ const App = () => {
         speed={0.5}
       />
       <SplashCursor />
-      <div className='hidden xl:block overflow-hidden'>
+      <div className='w-full h-screen hidden xl:block'>
         <ReactLenis root options={{ smoothWheel: true, orientation: 'vertical' }}>
           <Home />
           <Profil />
