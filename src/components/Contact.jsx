@@ -70,7 +70,7 @@ const Contact = () => {
   })
 
   return (
-    <section ref={sectionRef} className='h-full w-full flex flex-col font-grotesk'>
+    <section ref={sectionRef} className='h-screen w-screen flex flex-col font-grotesk'>
       {/* Contact */}
       <div className='w-full h-3/5 bg-zinc-500/80 inline-flex justify-center px-16'>
 

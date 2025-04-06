@@ -59,7 +59,7 @@ const Career = () => {
   })
 
   return (
-    <section className='w-full h-full font-grotesk flex flex-col justify-center mb-[50vh]'>
+    <section className='w-screen h-screen font-grotesk flex flex-col justify-center mb-[50vh]'>
       <span className='w-full h-full flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
@@ -77,7 +77,6 @@ const Career = () => {
 
         {/* Professionnel */}
         <div ref={leftDivRef} className='w-1/2 h-[75vh] flex flex-col items-center bg-purple-300/60 rounded-lg p-4'>
-          <h3>
             <DecryptedText
               text='Professionnel'
               speed={125}
@@ -87,7 +86,6 @@ const Career = () => {
               className='text-3xl'
               parentClassName='text-3xl'
             />
-          </h3>
 
           <div className='w-full h-2/3 flex justify-end space-y-6 px-4 py-16'>
             <div className='flex flex-col space-y-6'>

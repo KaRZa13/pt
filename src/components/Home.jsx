@@ -31,7 +31,7 @@ const Home = () => {
   }, [])
 
   return (
-    <section className='w-full h-full font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
+    <section className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
       
       {/* Title */}
       <div className='flex flex-col justify-center items-center w-full h-full'>

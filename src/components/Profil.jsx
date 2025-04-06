@@ -28,7 +28,7 @@ const Profil = () => {
   })
 
   return (
-    <section className='w-full h-full mb-[75vh]'>
+    <section className='w-screen h-screen mb-[75vh]'>
       <div className='w-full h-[50vh] flex justify-center items-center font-grotesk'>
         <div>
           <ScrollTitle

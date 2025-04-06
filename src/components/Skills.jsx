@@ -33,7 +33,7 @@ const Skills = () => {
   })
 
   return (
-    <section className='w-full h-full flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
+    <section className='w-screen h-screen flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
       <ScrollTitle
         animationDuration={3}
         ease='back.inOut(2)'
