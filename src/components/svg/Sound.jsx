@@ -1,7 +1,8 @@
-const Sound = ({ isMuted }) => {
+const Sound = ({ isMuted, onToggle }) => {
   return (
     <div
-      className="relative flex items-center justify-center w-12 h-12 bg-purple-300 rounded-full cursor-pointer transition duration-300 shadow-md overflow-hidden hover:bg-purple-500 active:scale-75"
+      className="relative flex items-center justify-center w-12 h-12 bg-purple-300 border rounded-full cursor-pointer transition duration-300 shadow-md overflow-hidden hover:bg-purple-500 active:scale-75"
+      onClick={onToggle}
     >
       {!isMuted && (
         <div className="speaker w-full h-full flex items-center justify-center z-10 transition-opacity duration-300">

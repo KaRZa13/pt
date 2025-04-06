@@ -1,4 +1,5 @@
 import { ReactLenis } from 'lenis/react'
+import { useEffect, useRef, useState } from 'react'
 
 import Background from './components/elements/Background'
 import SplashCursor from './components/elements/SplashCursor'
@@ -10,30 +11,57 @@ import Project from './components/Project'
 import Career from './components/Career'
 import Contact from './components/Contact'
 
+import backgroundMusic from './assets/sound/moments_like_this.wav'
+
 const App = () => {
+  const audioRef = useRef(new Audio(backgroundMusic))
+
+  const handleSoundToggle = (enabled) => {
+    const audio = audioRef.current
+    audio.loop = true
+    audio.volume = 0.5
+
+    if (enabled) {
+      audio.play().catch((err) => {
+        console.warn('Impossible de jouer le son :', err)
+      })
+    } else {
+      audio.pause()
+    }
+  }
+
+  const handleSaveSound = (enabled) => {
+    handleSoundToggle(enabled)
+  }
+
+  useEffect(() => {
+    return () => {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+    }
+  }, [])
 
   return (
     <>
       {/* Desktop */}
-      <Background
-        style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
-        color={[1, 0.9, 1]}
-        mouseReact={false}
-        amplitude={0.1}
-        speed={0.5}
-      />
-      <SplashCursor />
-      <div className='w-full h-screen hidden xl:block'>
-        <ReactLenis root options={{ smoothWheel: true, orientation: 'vertical' }}>
-          <Home />
-          <Profil />
-          <Skills />
-          <Project />
-          <Career />
-          <Contact />
-        </ReactLenis>
-      </div>
-
+        <Background
+          style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
+          color={[1, 0.9, 1]}
+          mouseReact={false}
+          amplitude={0.1}
+          speed={0.5}
+        />
+        <SplashCursor />
+        <div className='w-full h-screen hidden xl:block'>
+          <ReactLenis root options={{ smoothWheel: true, orientation: 'vertical' }}>
+            <Home onSaveSound={handleSaveSound} onToggleSound={handleSoundToggle} />
+            <Profil />
+            <Skills />
+            <Project />
+            <Career />
+            <Contact />
+          </ReactLenis>
+        </div>
 
 
       {/* Mobile... */}
