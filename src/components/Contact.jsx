@@ -70,7 +70,7 @@ const Contact = () => {
   })
 
   return (
-    <section ref={sectionRef} className='h-screen w-screen flex flex-col font-grotesk'>
+    <section ref={sectionRef} className='h-full w-full flex flex-col font-grotesk'>
       {/* Contact */}
       <div className='w-full h-3/5 bg-zinc-500/80 inline-flex justify-center px-16'>
 
@@ -86,11 +86,6 @@ const Contact = () => {
               parentClassName='text-4xl'
             />
           </h2>
-          <a onClick={(e) => {
-            e.preventDefault()
-            window.open('https://www.linkedin.com/in/rafael-muro-39b219295/', '_blank')
-          }}>
-          </a>
         </div>
 
         <div className='w-1.5 bg-zinc-400 my-12 rounded-full' />

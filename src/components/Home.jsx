@@ -1,5 +1,7 @@
 import BlurText from './elements/BlurText'
 import Arrow from './svg/Arrow'
+import soundwave from '../json/anim/soundwave.json'
+import Lottie from 'react-lottie'
 import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -29,7 +31,9 @@ const Home = () => {
   }, [])
 
   return (
-    <section className='w-screen h-screen font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
+    <section className='w-full h-full font-grotesk flex justify-center items-center relative overflow-hidden mb-[25vh]'>
+      
+      {/* Title */}
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <h1 className='text-zinc-900 text-3xl'>
           <BlurText
@@ -48,6 +52,15 @@ const Home = () => {
             className='text-7xl mb-8' />
         </h2>
       </div>
+
+      {/* menu tr */}
+      <div className='absolute top-0 right-0 flex flex-col justify-center items-center w-full h-full'>
+        <Lottie animationData={soundwave} />
+      </div>
+
+
+
+      {/* info scroll */}
       <div ref={scrollDivRef} className='absolute bottom-18 inline-flex justify-center items-center bg-white/50 rounded-full p-2 whitespace-nowrap'>
         <Arrow />
         <p>Scroll down</p>

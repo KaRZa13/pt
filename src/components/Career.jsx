@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from './elements/ScrollTitle'
 import DecryptedText from './elements/DecryptedText'
-import career from '../json/career.json'
+import career from '../json/data/career.json'
 
 const Career = () => {
   const leftDivRef = useRef(null)
@@ -59,8 +59,8 @@ const Career = () => {
   })
 
   return (
-    <section className='w-screen h-screen font-grotesk flex flex-col justify-center mb-[50vh]'>
-      <h3 className='w-full h-full flex justify-center items-center'>
+    <section className='w-full h-full font-grotesk flex flex-col justify-center mb-[50vh]'>
+      <span className='w-full h-full flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
           ease='back.inOut(2)'
@@ -71,7 +71,7 @@ const Career = () => {
         >
           Mon parcours
         </ScrollTitle>
-      </h3>
+      </span>
 
       <div className='w-full h-full inline-flex gap-8 px-8 '>
 

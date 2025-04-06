@@ -2,7 +2,7 @@ import { gsap } from 'gsap'
 import { useEffect, useRef, useState } from 'react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import ScrollTitle from './elements/ScrollTitle'
-import projects from '../json/projects.json'
+import projects from '../json/data/projects.json'
 
 const Project = () => {
   const galleryRef = useRef(null)
@@ -59,7 +59,7 @@ const Project = () => {
 
   return (
     <section className='flex flex-col overflow-x-hidden mb-[40vh] font-grotesk'>
-      <h2 className='h-[50vh] flex justify-center items-center'>
+      <span className='h-[50vh] flex justify-center items-center'>
         <ScrollTitle
           animationDuration={3}
           ease='back.inOut(2)'
@@ -70,9 +70,9 @@ const Project = () => {
         >
           Mes réalisations
         </ScrollTitle>
-      </h2>
+      </span>
 
-      <div ref={galleryRef} className='relative h-screen w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
+      <div ref={galleryRef} className='relative h-full w-max flex justify-center items-center space-x-10 flex-nowrap overflow-hidden'>
         {projects.map((project, index) => (
 
           <article

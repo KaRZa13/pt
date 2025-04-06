@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react'
-import skills from '../json/skills.json'
+import skills from '../json/data/skills.json'
 import Tilt from 'react-parallax-tilt'
 import ScrollTitle from './elements/ScrollTitle'
 import ContentScroll from './elements/ContentScroll'
@@ -33,19 +33,17 @@ const Skills = () => {
   })
 
   return (
-    <section className='w-screen h-screen flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
-      <h2>
-        <ScrollTitle
-          animationDuration={3}
-          ease='back.inOut(2)'
-          scrollStart='center bottom+=50%'
-          scrollEnd='bottom bottom-=30%'
-          stagger={0.1}
-          textClassName='text-5xl uppercase'
-        >
-          Mes compétences
-        </ScrollTitle>
-      </h2>
+    <section className='w-full h-full flex flex-col justify-around items-center mb-[50vh] font-grotesk'>
+      <ScrollTitle
+        animationDuration={3}
+        ease='back.inOut(2)'
+        scrollStart='center bottom+=50%'
+        scrollEnd='bottom bottom-=30%'
+        stagger={0.1}
+        textClassName='text-5xl uppercase'
+      >
+        Mes compétences
+      </ScrollTitle>
 
       <div ref={skillsRef}>
         <ContentScroll
