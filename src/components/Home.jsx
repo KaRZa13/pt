@@ -55,7 +55,7 @@ const Home = () => {
 
       {/* menu tr */}
       <div className='absolute top-0 right-0 flex flex-col justify-center items-center w-full h-full'>
-        <Lottie animationData={soundwave} />
+        {/* <Lottie animationData={soundwave} /> */}
       </div>
 
 
