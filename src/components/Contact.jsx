@@ -3,7 +3,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import DecryptedText from './elements/DecryptedText'
 import ContactForm from './elements/ContactForm'
-import Github from './svg/Github'
+import GithubLogo from './svg/GithubLogo'
 import Mail from './svg/Mail'
 import Linkedin from './svg/Linkedin'
 import Phone from './svg/Phone'
@@ -21,7 +21,7 @@ const Contact = ({ hoverSound }) => {
       link: 'tel:+33612345678'
     },
     {
-      icon: <Github />,
+      icon: <GithubLogo />,
       bgColor: 'bg-black',
       borderColor: 'border-black',
       link: 'https://github.com/KaRZa13'
