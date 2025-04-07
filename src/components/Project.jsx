@@ -88,7 +88,7 @@ const Project = () => {
                   <img
                     src={project.image.src}
                     alt={project.name}
-                    className='w-[50vw] transition-transform duration-300 group-hover:scale-105 rounded-3xl'
+                    className={`w-[50vw] ${flipped[index] ? 'backface-hidden' : ''} transition-transform duration-300 group-hover:scale-105 rounded-3xl`}
                   />
                   <div className='absolute inset-0 bg-purple-200 opacity-0 group-hover:opacity-70 transition duration-300 pointer-events-none rounded-3xl'></div>
                   <h2 className='absolute inset-0 flex items-center justify-center text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none'>
