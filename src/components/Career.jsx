@@ -67,7 +67,7 @@ const Career = () => {
           scrollStart='top bottom+=50%'
           scrollEnd='bottom bottom-=30%'
           stagger={0.1}
-          textClassName='text-5xl uppercase'
+          textClassName='text-6xl uppercase'
         >
           Mon parcours
         </ScrollTitle>

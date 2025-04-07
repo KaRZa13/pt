@@ -1,6 +1,6 @@
 const Cookies = ({ showCookiesDiv, soundEnabled, setSoundEnabled, handleSave }) => {
   return (
-    <div className={`absolute bottom-0 left-0 w-full h-1/4 bg-purple-800/95 flex justify-around items-center px-8 transition-opacity duration-500 ${showCookiesDiv ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+    <div className={`fixed bottom-0 left-0 w-full h-1/4 bg-purple-800/95 flex justify-around items-center z-10 px-8 transition-opacity duration-500 ${showCookiesDiv ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
 
       <div className='flex flex-col justify-center gap-4'>
         <p className='text-md text-white'>Ce site utilise de la musique et des sons, il est conseillé de les utiliser pour une expérience optimale</p>

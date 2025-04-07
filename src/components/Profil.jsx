@@ -37,7 +37,7 @@ const Profil = () => {
             scrollStart='top bottom+=30%'
             scrollEnd='bottom bottom-=30%'
             stagger={0.1}
-            textClassName='text-5xl uppercase'
+            textClassName='text-6xl uppercase'
           >
             Une petite présentation s'impose
           </ScrollTitle>

@@ -7,9 +7,10 @@ import Github from './svg/Github'
 import Mail from './svg/Mail'
 import Linkedin from './svg/Linkedin'
 import Phone from './svg/Phone'
+import Spotify from './svg/Spotify'
 import CurriculumVitae from './svg/CurriculumVitae'
 
-const Contact = () => {
+const Contact = ({ hoverSound }) => {
   const sectionRef = useRef(null)
 
   const socialIcons = [
@@ -96,13 +97,13 @@ const Contact = () => {
       </div>
 
       {/* Socials */}
-      <div className='w-full h-2/5 bg-purple-200/60  flex justify-center items-center'>
+      <div className='w-full h-2/5 bg-purple-200/60 flex flex-col justify-center items-center py-2'>
 
         <div className='flex items-center gap-16 w-full h-full justify-center'>
           {socialIcons.map((social, index) => (
             <div key={index}>
               <a href={social.link} target='_blank' rel='noreferrer'>
-                <button className='relative w-24 h-24 rounded-full group cursor-pointer'>
+                <button onMouseEnter={hoverSound} className='relative w-24 h-24 rounded-full group cursor-pointer'>
                   <div className={`floater w-full h-full absolute top-0 left-0 ${social.bgColor} rounded-full duration-300 group-hover:-top-16 group-hover:shadow-2xl`} />
                   <div className={`icon relative z-10 w-full h-full flex items-center justify-center border-2 ${social.borderColor} rounded-full`}>
                     {social.icon}
@@ -112,6 +113,7 @@ const Contact = () => {
             </div>
           ))}
         </div>
+        <span className='text-sm inline-flex gap-2'>Portfolio réalisé par Rafael MURO - 2025 - Musique "Moments like this" par Chill Denis <a href="https://open.spotify.com/intl-fr/artist/4gOKqVqVRQCGUrc70alpbr?si=FQX3JJnTTvqzdGQn3uyAZg"><Spotify/></a></span>
 
       </div>
     </section>

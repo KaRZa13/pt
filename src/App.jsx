@@ -12,9 +12,22 @@ import Career from './components/Career'
 import Contact from './components/Contact'
 
 import backgroundMusic from './assets/sound/moments_like_this.wav'
+import hoverSound from './assets/sound/hover_sound.mp3'
 
 const App = () => {
   const audioRef = useRef(new Audio(backgroundMusic))
+
+  const handleHoverSound = (enabled) => {
+    if (enabled) {
+      const audio = new Audio(hoverSound)
+      audio.loop = false
+      audio.volume = 0.4
+      audio.play().catch((err) => {
+        console.warn('Impossible de jouer le son :', err)
+      })
+    }
+  }
+
 
   const handleSoundToggle = (enabled) => {
     const audio = audioRef.current
@@ -59,7 +72,7 @@ const App = () => {
             <Skills />
             <Project />
             <Career />
-            <Contact />
+            <Contact hoverSound={handleHoverSound}/>
           </ReactLenis>
         </div>
 
