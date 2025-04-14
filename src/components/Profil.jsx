@@ -60,7 +60,7 @@ const Profil = () => {
             scale={0.8}
             threshold={0.2}
           >
-            <img src='img/pp.jpeg' alt='Photo de profil' className='rounded-full' />
+            <img src='img/pp.png' alt='Photo de profil' className='rounded-full' />
           </ContentScroll>
         </div>
 
