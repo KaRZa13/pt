@@ -42,7 +42,7 @@ const Contact = ({ hoverSound }) => {
       icon: <CurriculumVitae />,
       bgColor: 'bg-teal-700',
       borderColor: 'border-teal-700',
-      link: '/cv_Rafael_MURO.pdf',
+      link: '/pt/cv_Rafael_MURO.pdf',
       download: true
     }
   ]
