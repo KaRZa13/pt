@@ -53,7 +53,7 @@ const Project = () => {
     }
   }, [])
 
-  const toggleFlip = index => {
+  const toggleFlip = (index) => {
     setFlipped(prev => ({ ...prev, [index]: !prev[index] }))
   }
 
@@ -116,8 +116,6 @@ const Project = () => {
                     ))}
                   </div>
 
-
-
                   {/* Liens */}
                   <div className='flex flex-col gap-8 mt-4'>
                     <span>
@@ -142,6 +140,8 @@ const Project = () => {
 
         ))}
       </div>
+
+
     </section>
   )
 }
