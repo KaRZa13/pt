@@ -1,5 +1,5 @@
 import { ReactLenis } from 'lenis/react'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 import Background from './components/elements/Background'
 import SplashCursor from './components/elements/SplashCursor'
