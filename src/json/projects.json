@@ -36,7 +36,11 @@
   {
     "name": "RoguePOO",
     "description": "Jeux RPG en python orienté objet réalisé en 1ère année de BTS SIO en groupe de 2 en 10 jours. \n Il y a plusieurs classes de personnage prise en compte, une gestion d'inventaire, de combat en tour par tour et deux modes de jeu.",
-    "techs": ["Python", "POO", "PyGame"],
+    "techs": [
+      "Python",
+      "POO",
+      "PyGame"
+    ],
     "url": {
       "url": "https://github.com/KaRZa13/RoguePOO",
       "label": "Découvrir le projet sur Github"
@@ -44,6 +48,24 @@
     "image": {
       "src": "./src/assets/projects/roguepoo.png",
       "alt": "RoguePOO"
+    }
+  },
+  {
+    "name": "EcoTrack",
+    "description": "C'est un travail en groupe de 4 dans lequel nous avions pour objectif de réaliser une web app, avec une authentification sécurisée, un tableau de bord avec base de données et un form permettant de calculer son empreinte carbonne. \n De plus nous avons ajouter un système de gamification pour inciter les utilisateurs à réduire leur empreinte carbonne.",
+    "techs": [
+      "Nuxt",
+      "TailwindCSS",
+      "Supabase",
+      "Vue.js"
+    ],
+    "url": {
+      "url": "https://github.com/KaRZa13/EcoTrack",
+      "label": "Découvrir le projet sur Github"
+    },
+    "image": {
+      "src": "./src/assets/projects/ecotrack.png",
+      "alt": "EcoTrack"
     }
   },
   {
