@@ -138,7 +138,6 @@ const Career = () => {
                       <p className='text-md'>{item.location}</p>
                     </div>
                   </div>
-
                 </div>
               ))}
             </div>
