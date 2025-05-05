@@ -13,7 +13,7 @@
       "label": "Découvrir le projet sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/laNewsletter.png",
+      "src": "/img/projects/laNewsletter.png",
       "alt": "laNewsletter"
     }
   },
@@ -29,7 +29,7 @@
       "label": "Découvrir le projet sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/epsi-fun.png",
+      "src": "/img/projects/epsi-fun.png",
       "alt": "epsi.fun"
     }
   },
@@ -46,7 +46,7 @@
       "label": "Découvrir le projet sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/roguepoo.png",
+      "src": "/img/projects/roguepoo.png",
       "alt": "RoguePOO"
     }
   },
@@ -64,7 +64,7 @@
       "label": "Découvrir le projet sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/ecotrack.png",
+      "src": "/img/projects/ecotrack.png",
       "alt": "EcoTrack"
     }
   },
@@ -82,7 +82,7 @@
       "label": "Découvrir le projet sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/portfolio.png",
+      "src": "/img/projects/portfolio.png",
       "alt": "Portfolio"
     }
   },
@@ -95,7 +95,7 @@
       "label": "Découvrir mes autres projets sur Github"
     },
     "image": {
-      "src": "./src/assets/projects/projets-github.png",
+      "src": "/img/projects/projets-github.png",
       "alt": "Placeholder Image"
     }
   }

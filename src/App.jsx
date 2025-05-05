@@ -11,8 +11,8 @@ import Project from './components/Project'
 import Career from './components/Career'
 import Contact from './components/Contact'
 
-import backgroundMusic from './assets/sound/moments_like_this.wav'
-import hoverSound from './assets/sound/hover_sound.mp3'
+import backgroundMusic from '/sound/moments_like_this.wav'
+import hoverSound from '/sound/hover_sound.mp3'
 
 const App = () => {
   const audioRef = useRef(new Audio(backgroundMusic))
