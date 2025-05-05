@@ -65,7 +65,7 @@ const App = () => {
           speed={0.5}
         />
         <SplashCursor />
-        <div className='w-full h-screen hidden xl:block'>
+        <div className='w-full h-screen hidden md:block'>
           <ReactLenis root options={{ smoothWheel: true, orientation: 'vertical' }}>
             <Home onSaveSound={handleSaveSound} onToggleSound={handleSoundToggle} />
             <Profil />
@@ -78,7 +78,7 @@ const App = () => {
 
 
       {/* Mobile... */}
-      <section className='xl:hidden w-full h-screen flex justify-center items-center text-3xl font-grotesk p-4'>
+      <section className='md:hidden w-full h-screen flex justify-center items-center text-3xl font-grotesk p-4'>
         <div className='flex justify-center items-center bg-purple-300/60 rounded-3xl p-8'>
           <p className='text-xl'>Ce portfolio n'est pas disponible (pour le moment...) sur mobile, pour le découvrir, revenez sur PC !</p>
         </div>
